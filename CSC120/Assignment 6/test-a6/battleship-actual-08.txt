@@ -1,0 +1,1 @@
+ERROR: Could not open file: test-a6/NoSuchFile.txt

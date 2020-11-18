@@ -1,0 +1,2 @@
+test-a12/tiny01.fasta
+3

@@ -1,0 +1,25 @@
+# Test 1 (error)
+# This tests whether the program can handle file inputs that do not exist
+Dictionary File:
+doesnotexist.txt
+# End of test
+
+# Test 2 (error)
+# This tests whether the program can handle a word that is not in the dictionary
+fakeword
+# End of test
+
+# Test 3 (regular)
+# This tests the program's behavior on a valid word
+door
+# End of test
+
+# Test 4 (regular)
+# This tests the program's behavior on a valid with multiple pronunciations
+dour
+# End of test
+
+# Test 5 (edge case)
+# This tests whether the program can handle a word with no stressor
+a
+# End of test

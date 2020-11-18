@@ -1,0 +1,25 @@
+# Test 1 (error)
+# This tests whether the program can handle file inputs that do not exist
+CSV File:
+doesnotexist.csv
+# End of test
+
+# Test 2 (regular)
+# This tests whether the program can handle a readable csv file
+in100.csv
+# End of test
+
+# Test 3 (regular)
+# This tests the program's behavior on a valid input for N
+3
+# End of test
+
+# Test 4 (edge case)
+# This tests the program's behavior on a valid input of N that is greater than the number of elements in the linked list.
+length of the linked list plus 1
+# End of test
+
+# Test 5 (error)
+# This tests whether the program can handle an input of a negative number
+-2
+# End of test

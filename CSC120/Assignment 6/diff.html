@@ -1,0 +1,730 @@
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+        <head>
+            <meta http-equiv="Content-Type"
+                  content="text/html; charset=utf-8" />
+            <title></title>
+            <style type="text/css">
+                table.diff {font-family:Courier; border:1px solid black; margin-left: 3em}
+                .diff_header {background-color:#e0e0e0}
+                td.diff_header {text-align:right}
+                .diff_next {background-color:#c0c0c0}
+                .diff_add {background-color:#aaffaa}
+                .diff_chg {background-color:#ffff77}
+                .diff_sub {background-color:#ffaaaa}
+                h1 { font-size: 1.2em; text-decoration: underline; display: inline-block;}
+                h1:hover {cursor: pointer;}
+                h2 { font-size: 1.1em; margin-left: 1em }
+                pre { margin-left: 3em }
+                .notice { color: red; font-size: 2em; text-decoration underline; font-weight: bold }
+                .disclaimer { font-size: 1.2em; border: solid 1px; padding: .5em; font-family: sans-serif }
+                .arrow {height: 0px; width: 0px; border-top: 10px solid black; border-left: 6px solid transparent; border-right: 6px solid transparent; transform: rotate(270deg); display:inline-block;}
+                .arrow:hover {cursor: pointer;}
+            </style>
+            <script>
+            var output_view = function(elem) {
+                arrow_elem = elem;
+                if (arrow_elem.className != "arrow") {
+                    arrow_elem = elem.nextElementSibling;
+                    if (arrow_elem.className != "arrow") {
+                        return;
+                    }
+                }
+                if (arrow_elem.style.transform != "rotate(0deg)") {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "inline-block";
+                    arrow_elem.style.transform = "rotate(0deg)"
+                } else {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "none";
+                    arrow_elem.style.transform = "rotate(270deg)"
+                }
+            }
+            </script>
+        <body>
+            
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 1</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-01.txt'>test-a6/battleship-input-01.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/example-placement.txt>test-a6/example-placement.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-placement.txt>test-a6/example-placement.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 4 7
+P 4 2 5 2
+D 7 5 7 3
+B 2 2 2 5
+S 9 9 9 7
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-01.txt'>test-a6/battleship-expected-01.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-01.txt'>test-a6/battleship-actual-01.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">hit</td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_4">4</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to0_4">4</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_5">5</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_5">5</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_6">6</td><td nowrap="nowrap">illegal&nbsp;guess</td><td class="diff_next"></td><td class="diff_header" id="to0_6">6</td><td nowrap="nowrap">illegal&nbsp;guess</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_7">7</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_7">7</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_8">8</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_8">8</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_9">9</td><td nowrap="nowrap">A&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to0_9">9</td><td nowrap="nowrap">A&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_10">10</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to0_10">10</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_11">11</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_11">11</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_12">12</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to0_12">12</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_13">13</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_13">13</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_14">14</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_14">14</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_15">15</td><td nowrap="nowrap">B&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to0_15">15</td><td nowrap="nowrap">B&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_16">16</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_16">16</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_17">17</td><td nowrap="nowrap">P&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to0_17">17</td><td nowrap="nowrap">P&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_18">18</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_18">18</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_19">19</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to0_19">19</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_20">20</td><td nowrap="nowrap">D&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to0_20">20</td><td nowrap="nowrap">D&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_21">21</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to0_21">21</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_22">22</td><td nowrap="nowrap">illegal&nbsp;guess</td><td class="diff_next"></td><td class="diff_header" id="to0_22">22</td><td nowrap="nowrap">illegal&nbsp;guess</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_23">23</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_23">23</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_24">24</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to0_24">24</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_25">25</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to0_25">25</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_26">26</td><td nowrap="nowrap">S&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to0_26">26</td><td nowrap="nowrap">S&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_27">27</td><td nowrap="nowrap">all&nbsp;ships&nbsp;sunk:&nbsp;game&nbsp;over</td><td class="diff_next"></td><td class="diff_header" id="to0_27">27</td><td nowrap="nowrap">all&nbsp;ships&nbsp;sunk:&nbsp;game&nbsp;over</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 2</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-02.txt'>test-a6/battleship-input-02.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/battleship-err-bad-size.txt>test-a6/battleship-err-bad-size.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/battleship-err-bad-size.txt>test-a6/battleship-err-bad-size.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 3 7
+P 4 2 5 2
+D 7 5 7 3
+B 2 2 2 5
+S 9 9 9 7
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to1__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-02.txt'>test-a6/battleship-expected-02.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-02.txt'>test-a6/battleship-actual-02.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="from1_1">1</td><td nowrap="nowrap">ERROR:&nbsp;incorrect&nbsp;ship&nbsp;size:&nbsp;A&nbsp;0&nbsp;7&nbsp;3&nbsp;7</td><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="to1_1">1</td><td nowrap="nowrap">ERROR:&nbsp;incorrect&nbsp;ship&nbsp;size:&nbsp;A&nbsp;0&nbsp;7&nbsp;3&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_2">2</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to1_2">2</td><td nowrap="nowrap"></td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 3</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-03.txt'>test-a6/battleship-input-03.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/battleship-err-diagonal.txt>test-a6/battleship-err-diagonal.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/battleship-err-diagonal.txt>test-a6/battleship-err-diagonal.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 4 7
+P 4 2 5 2
+D 7 5 7 3
+B 2 2 2 5
+S 8 9 9 7
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to2__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-03.txt'>test-a6/battleship-expected-03.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-03.txt'>test-a6/battleship-actual-03.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="from2_1">1</td><td nowrap="nowrap">ERROR:&nbsp;ship&nbsp;not&nbsp;horizontal&nbsp;or&nbsp;vertical:&nbsp;S&nbsp;8&nbsp;9&nbsp;9&nbsp;7</td><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="to2_1">1</td><td nowrap="nowrap">ERROR:&nbsp;ship&nbsp;not&nbsp;horizontal&nbsp;or&nbsp;vertical:&nbsp;S&nbsp;8&nbsp;9&nbsp;9&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_2">2</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to2_2">2</td><td nowrap="nowrap"></td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 4</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-04.txt'>test-a6/battleship-input-04.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/battleship-err-duplicate.txt>test-a6/battleship-err-duplicate.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/battleship-err-duplicate.txt>test-a6/battleship-err-duplicate.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 4 7
+P 4 2 5 2
+D 7 5 7 3
+B 2 2 2 5
+S 9 9 9 7
+P 7 9 7 8
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to3__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-04.txt'>test-a6/battleship-expected-04.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-04.txt'>test-a6/battleship-actual-04.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="from3_1">1</td><td nowrap="nowrap">ERROR:&nbsp;fleet&nbsp;composition&nbsp;incorrect</td><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="to3_1">1</td><td nowrap="nowrap">ERROR:&nbsp;fleet&nbsp;composition&nbsp;incorrect</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 5</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-05.txt'>test-a6/battleship-input-05.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/battleship-err-oob.txt>test-a6/battleship-err-oob.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/battleship-err-oob.txt>test-a6/battleship-err-oob.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 9 7 13 7
+P 4 2 5 2
+D 7 5 7 3
+B 2 2 2 5
+S 9 9 9 7
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to4__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-05.txt'>test-a6/battleship-expected-05.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-05.txt'>test-a6/battleship-actual-05.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="from4_1">1</td><td nowrap="nowrap">ERROR:&nbsp;ship&nbsp;out-of-bounds:&nbsp;A&nbsp;9&nbsp;7&nbsp;13&nbsp;7</td><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="to4_1">1</td><td nowrap="nowrap">ERROR:&nbsp;ship&nbsp;out-of-bounds:&nbsp;A&nbsp;9&nbsp;7&nbsp;13&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_2">2</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to4_2">2</td><td nowrap="nowrap"></td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 6</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-06.txt'>test-a6/battleship-input-06.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/battleship-err-overlap.txt>test-a6/battleship-err-overlap.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/battleship-err-overlap.txt>test-a6/battleship-err-overlap.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 4 7
+P 0 7 1 7
+D 7 5 7 3
+B 2 2 2 5
+S 9 9 9 7
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to5__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-06.txt'>test-a6/battleship-expected-06.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-06.txt'>test-a6/battleship-actual-06.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="from5_1">1</td><td nowrap="nowrap">ERROR:&nbsp;overlapping&nbsp;ship:&nbsp;P&nbsp;0&nbsp;7&nbsp;1&nbsp;7</td><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="to5_1">1</td><td nowrap="nowrap">ERROR:&nbsp;overlapping&nbsp;ship:&nbsp;P&nbsp;0&nbsp;7&nbsp;1&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_2">2</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to5_2">2</td><td nowrap="nowrap"></td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 7</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-07.txt'>test-a6/battleship-input-07.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/battleship-err-toofew.txt>test-a6/battleship-err-toofew.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/battleship-err-toofew.txt>test-a6/battleship-err-toofew.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 4 7
+P 4 2 5 2
+B 2 2 2 5
+S 9 9 9 7
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to6__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-07.txt'>test-a6/battleship-expected-07.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-07.txt'>test-a6/battleship-actual-07.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to6__top">t</a></td><td class="diff_header" id="from6_1">1</td><td nowrap="nowrap">ERROR:&nbsp;fleet&nbsp;composition&nbsp;incorrect</td><td class="diff_next"><a href="#difflib_chg_to6__top">t</a></td><td class="diff_header" id="to6_1">1</td><td nowrap="nowrap">ERROR:&nbsp;fleet&nbsp;composition&nbsp;incorrect</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 8</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-08.txt'>test-a6/battleship-input-08.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>test-a6/NoSuchFile.txt</pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess.txt>test-a6/example-guess.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+0 7
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to7__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-08.txt'>test-a6/battleship-expected-08.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-08.txt'>test-a6/battleship-actual-08.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to7__top">t</a></td><td class="diff_header" id="from7_1">1</td><td nowrap="nowrap">ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file:&nbsp;test-a6/NoSuchFile.txt</td><td class="diff_next"><a href="#difflib_chg_to7__top">t</a></td><td class="diff_header" id="to7_1">1</td><td nowrap="nowrap">ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file:&nbsp;test-a6/NoSuchFile.txt</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 9</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-09.txt'>test-a6/battleship-input-09.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/example-placement.txt>test-a6/example-placement.txt</a></pre>
+<tr><td><pre style='margin:0;'>test-a6/NoSuchFile.txt</pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-placement.txt>test-a6/example-placement.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 4 7
+P 4 2 5 2
+D 7 5 7 3
+B 2 2 2 5
+S 9 9 9 7
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to8__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-09.txt'>test-a6/battleship-expected-09.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-09.txt'>test-a6/battleship-actual-09.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to8__top">t</a></td><td class="diff_header" id="from8_1">1</td><td nowrap="nowrap">ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file:&nbsp;test-a6/NoSuchFile.txt</td><td class="diff_next"><a href="#difflib_chg_to8__top">t</a></td><td class="diff_header" id="to8_1">1</td><td nowrap="nowrap">ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file:&nbsp;test-a6/NoSuchFile.txt</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>battleship.py</code> test 10</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a6/battleship-input-10.txt'>test-a6/battleship-input-10.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a6/example-placement.txt>test-a6/example-placement.txt</a></pre>
+<tr><td><pre style='margin:0;'><a href=test-a6/example-guess-repeats.txt>test-a6/example-guess-repeats.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-placement.txt>test-a6/example-placement.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+A 0 7 4 7
+P 4 2 5 2
+D 7 5 7 3
+B 2 2 2 5
+S 9 9 9 7
+</textarea></div>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 42.5%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a6/example-guess-repeats.txt>test-a6/example-guess-repeats.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7
+1 7
+0 7
+4 3
+4 3
+9 4
+2 7
+97 63
+2 3
+3 7
+4 7
+1 1
+2 2
+6 4
+7 4
+2 4
+2 5
+4 2
+5 2
+7 3
+3 8
+7 5
+7 7
+20 3
+9 7
+7 6
+9 8
+9 9
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to9__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-expected-10.txt'>test-a6/battleship-expected-10.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a6/battleship-actual-10.txt'>test-a6/battleship-actual-10.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to9__top">t</a></td><td class="diff_header" id="from9_1">1</td><td nowrap="nowrap">hit</td><td class="diff_next"><a href="#difflib_chg_to9__top">t</a></td><td class="diff_header" id="to9_1">1</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_2">2</td><td nowrap="nowrap">hit&nbsp;(again)</td><td class="diff_next"></td><td class="diff_header" id="to9_2">2</td><td nowrap="nowrap">hit&nbsp;(again)</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_3">3</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_3">3</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_4">4</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to9_4">4</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_5">5</td><td nowrap="nowrap">miss&nbsp;(again)</td><td class="diff_next"></td><td class="diff_header" id="to9_5">5</td><td nowrap="nowrap">miss&nbsp;(again)</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_6">6</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to9_6">6</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_7">7</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_7">7</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_8">8</td><td nowrap="nowrap">illegal&nbsp;guess</td><td class="diff_next"></td><td class="diff_header" id="to9_8">8</td><td nowrap="nowrap">illegal&nbsp;guess</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_9">9</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_9">9</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_10">10</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_10">10</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_11">11</td><td nowrap="nowrap">A&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to9_11">11</td><td nowrap="nowrap">A&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_12">12</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to9_12">12</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_13">13</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_13">13</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_14">14</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to9_14">14</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_15">15</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_15">15</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_16">16</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_16">16</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_17">17</td><td nowrap="nowrap">B&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to9_17">17</td><td nowrap="nowrap">B&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_18">18</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_18">18</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_19">19</td><td nowrap="nowrap">P&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to9_19">19</td><td nowrap="nowrap">P&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_20">20</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_20">20</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_21">21</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to9_21">21</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_22">22</td><td nowrap="nowrap">D&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to9_22">22</td><td nowrap="nowrap">D&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_23">23</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to9_23">23</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_24">24</td><td nowrap="nowrap">illegal&nbsp;guess</td><td class="diff_next"></td><td class="diff_header" id="to9_24">24</td><td nowrap="nowrap">illegal&nbsp;guess</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_25">25</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_25">25</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_26">26</td><td nowrap="nowrap">miss</td><td class="diff_next"></td><td class="diff_header" id="to9_26">26</td><td nowrap="nowrap">miss</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_27">27</td><td nowrap="nowrap">hit</td><td class="diff_next"></td><td class="diff_header" id="to9_27">27</td><td nowrap="nowrap">hit</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_28">28</td><td nowrap="nowrap">S&nbsp;sunk</td><td class="diff_next"></td><td class="diff_header" id="to9_28">28</td><td nowrap="nowrap">S&nbsp;sunk</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_29">29</td><td nowrap="nowrap">all&nbsp;ships&nbsp;sunk:&nbsp;game&nbsp;over</td><td class="diff_next"></td><td class="diff_header" id="to9_29">29</td><td nowrap="nowrap">all&nbsp;ships&nbsp;sunk:&nbsp;game&nbsp;over</td></tr>
+        </tbody>
+    </table></div><br><br><table class="diff" summary="Legends"> <tr> <th colspan="2"> Legends </th> </tr> <tr> <td> <table border="" summary="Colors"> <tr><th> Colors </th> </tr> <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr> <tr><td class="diff_chg">Changed</td> </tr> <tr><td class="diff_sub">Deleted</td> </tr> </table></td> <td> <table border="" summary="Links"> <tr><th colspan="2"> Links </th> </tr> <tr><td>(f)irst change</td> </tr> <tr><td>(n)ext change</td> </tr> <tr><td>(t)op</td> </tr> </table></td> </tr> </table><br><br><div class=disclaimer><b>NOTE:</b> This tester gives you an automated way to confirm that your programs are producing the expected output for the examples shown in the assignment specifications, including error cases. <u>Passing the test cases does not guarantee any particular grade: additional and/or different test cases will be included when grading.</u></div>

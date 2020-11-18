@@ -1,0 +1,48 @@
+# Test 1 (error)
+# This tests whether the program can handle file inputs that do not exist
+Placement File:
+doesnotexist.txt
+# End of test
+
+# Test 2 (error)
+# This tests whether the program can handle a placement file with more than 5 ships
+Placement File:
+[A 0 7 4 7,
+P 4 2 5 2,
+D 7 5 7 3,
+B 2 2 2 5,
+S 9 9 9 7,
+D 8 1 8 3]
+# End of test
+
+# Test 3 (regular)
+# This tests the program's behavior on a valid placement file
+Placement File:
+[A 0 7 4 7,
+P 4 2 5 2,
+D 7 5 7 3,
+B 2 2 2 5,
+S 9 9 9 7]
+# End of test
+
+# Test 4 (regular)
+# This tests the program's behavior on a valid guess file
+Guess File
+[1 7,
+1 7,
+0 7,
+4 3,
+4 3,
+9 4,
+2 7,
+97 63,
+2 3,
+3 7,
+4 7]
+# End of test
+
+# Test 5 (error)
+# This tests whether the program can handle an empty placement file
+Placement File:
+[]
+# End of test

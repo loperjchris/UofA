@@ -1,0 +1,6 @@
+File: N: trump : 35
+the : 35
+hillary : 22
+clinton : 21
+video : 20
+for : 15

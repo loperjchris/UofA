@@ -1,0 +1,15 @@
+﻿Sprint Notes
+
+
+27 November 2019-
+Informed by customer that we were looking in a good spot and he seemed happy with the progress we have so far.  Customer requested that by the next sprint we have the ability to purchase and place towers on the game and have waves of enemies running.
+
+
+Meeting was short as the customer didn’t have too many requirements for us for the next sprint.
+
+
+4 December 2019-
+The customer liked the progress we had made since the last sprint.  Towers can be purchased and placed and the waves run in a test option.  Game isn’t quite playable yet, though.  The customer told us to be finished with the product by the end of the sprint as the next meeting is the deadline.
+
+
+Meeting was also very short as the customer thought our product was coming along nicely.

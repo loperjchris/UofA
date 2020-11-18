@@ -1,0 +1,291 @@
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+        <head>
+            <meta http-equiv="Content-Type"
+                  content="text/html; charset=utf-8" />
+            <title></title>
+            <style type="text/css">
+                table.diff {font-family:Courier; border:1px solid black; margin-left: 3em}
+                .diff_header {background-color:#e0e0e0}
+                td.diff_header {text-align:right}
+                .diff_next {background-color:#c0c0c0}
+                .diff_add {background-color:#aaffaa}
+                .diff_chg {background-color:#ffff77}
+                .diff_sub {background-color:#ffaaaa}
+                h1 { font-size: 1.2em; text-decoration: underline; display: inline-block;}
+                h1:hover {cursor: pointer;}
+                h2 { font-size: 1.1em; margin-left: 1em }
+                pre { margin-left: 3em }
+                .notice { color: red; font-size: 2em; text-decoration underline; font-weight: bold }
+                .disclaimer { font-size: 1.2em; border: solid 1px; padding: .5em; font-family: sans-serif }
+                .arrow {height: 0px; width: 0px; border-top: 10px solid black; border-left: 6px solid transparent; border-right: 6px solid transparent; transform: rotate(270deg); display:inline-block;}
+                .arrow:hover {cursor: pointer;}
+            </style>
+            <script>
+            var output_view = function(elem) {
+                arrow_elem = elem;
+                if (arrow_elem.className != "arrow") {
+                    arrow_elem = elem.nextElementSibling;
+                    if (arrow_elem.className != "arrow") {
+                        return;
+                    }
+                }
+                if (arrow_elem.style.transform != "rotate(0deg)") {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "inline-block";
+                    arrow_elem.style.transform = "rotate(0deg)"
+                } else {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "none";
+                    arrow_elem.style.transform = "rotate(270deg)"
+                }
+            }
+            </script>
+        <body>
+            
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 1</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-01.txt'>test-a11/huffman-input-01.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a11/test1>test-a11/test1</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a11/test1>test-a11/test1</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+9 0 6 3 2 8 4
+6 0 2 3 8 9 4
+0001011011100011
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-01.txt'>test-a11/huffman-expected-01.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-01.txt'>test-a11/huffman-actual-01.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;6&nbsp;2&nbsp;8&nbsp;3&nbsp;0&nbsp;4&nbsp;9</td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;6&nbsp;2&nbsp;8&nbsp;3&nbsp;0&nbsp;4&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">62448468</td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap">62448468</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 2</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-02.txt'>test-a11/huffman-input-02.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a11/test2>test-a11/test2</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a11/test2>test-a11/test2</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+9 0 6 3 2 8 4
+6 0 2 3 8 9 4
+00011010110110000
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to1__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-02.txt'>test-a11/huffman-expected-02.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-02.txt'>test-a11/huffman-actual-02.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="from1_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;6&nbsp;2&nbsp;8&nbsp;3&nbsp;0&nbsp;4&nbsp;9</td><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="to1_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;6&nbsp;2&nbsp;8&nbsp;3&nbsp;0&nbsp;4&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_2">2</td><td nowrap="nowrap">68244866</td><td class="diff_next"></td><td class="diff_header" id="to1_2">2</td><td nowrap="nowrap">68244866</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 3</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-03.txt'>test-a11/huffman-input-03.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a11/test3>test-a11/test3</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a11/test3>test-a11/test3</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+3 4 6 1 7 8 2
+6 4 7 1 8 3 2
+0001011011100011
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to2__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-03.txt'>test-a11/huffman-expected-03.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-03.txt'>test-a11/huffman-actual-03.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="from2_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;6&nbsp;7&nbsp;8&nbsp;1&nbsp;4&nbsp;2&nbsp;3</td><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="to2_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;6&nbsp;7&nbsp;8&nbsp;1&nbsp;4&nbsp;2&nbsp;3</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_2">2</td><td nowrap="nowrap">67228268</td><td class="diff_next"></td><td class="diff_header" id="to2_2">2</td><td nowrap="nowrap">67228268</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 4</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-04.txt'>test-a11/huffman-input-04.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a11/test4>test-a11/test4</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a11/test4>test-a11/test4</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+9 3 0 2 4 6 1
+0 3 2 9 6 4 1
+00110011001100110011
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to3__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-04.txt'>test-a11/huffman-expected-04.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-04.txt'>test-a11/huffman-actual-04.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="from3_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;0&nbsp;2&nbsp;3&nbsp;6&nbsp;1&nbsp;4&nbsp;9</td><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="to3_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;0&nbsp;2&nbsp;3&nbsp;6&nbsp;1&nbsp;4&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from3_2">2</td><td nowrap="nowrap">0101010101</td><td class="diff_next"></td><td class="diff_header" id="to3_2">2</td><td nowrap="nowrap">0101010101</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 5</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-05.txt'>test-a11/huffman-input-05.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a11/test5>test-a11/test5</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a11/test5>test-a11/test5</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+1 7 5 8 2 3 6 9 4
+7 8 2 5 1 6 4 9 3
+01011010010110100101101001011010 
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to4__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-05.txt'>test-a11/huffman-expected-05.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-05.txt'>test-a11/huffman-actual-05.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="from4_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;2&nbsp;8&nbsp;5&nbsp;7&nbsp;4&nbsp;9&nbsp;6&nbsp;3&nbsp;1</td><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="to4_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;2&nbsp;8&nbsp;5&nbsp;7&nbsp;4&nbsp;9&nbsp;6&nbsp;3&nbsp;1</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_2">2</td><td nowrap="nowrap">24242424</td><td class="diff_next"></td><td class="diff_header" id="to4_2">2</td><td nowrap="nowrap">24242424</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 6</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-06.txt'>test-a11/huffman-input-06.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a11/test6>test-a11/test6</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a11/test6>test-a11/test6</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+16 14 13 1 2 17 18 19 20 12 3 4 21 22 23 15 11 5 6 10 7 8 25 24 26 27
+1 13 17 19 18 20 2 14 3 12 21 22 23 4 16 5 11 6 15 7 10 25 8 26 24 27
+00000101000101101001101110110011011101111111110
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to5__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-06.txt'>test-a11/huffman-expected-06.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-06.txt'>test-a11/huffman-actual-06.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="from5_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;1&nbsp;19&nbsp;20&nbsp;18&nbsp;17&nbsp;2&nbsp;13&nbsp;3&nbsp;23&nbsp;22&nbsp;21&nbsp;4&nbsp;12&nbsp;14&nbsp;5&nbsp;6&nbsp;11&nbsp;7&nbsp;25&nbsp;26&nbsp;27&nbsp;24&nbsp;8&nbsp;10&nbsp;15&nbsp;16</td><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="to5_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;1&nbsp;19&nbsp;20&nbsp;18&nbsp;17&nbsp;2&nbsp;13&nbsp;3&nbsp;23&nbsp;22&nbsp;21&nbsp;4&nbsp;12&nbsp;14&nbsp;5&nbsp;6&nbsp;11&nbsp;7&nbsp;25&nbsp;26&nbsp;27&nbsp;24&nbsp;8&nbsp;10&nbsp;15&nbsp;16</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_2">2</td><td nowrap="nowrap">11920323657252726</td><td class="diff_next"></td><td class="diff_header" id="to5_2">2</td><td nowrap="nowrap">11920323657252726</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 7</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-07.txt'>test-a11/huffman-input-07.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a11/test7>test-a11/test7</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a11/test7>test-a11/test7</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+7 6 1 2 5 4 3
+1 6 2 7 4 5 3
+0001010111011101101010101010101010110101000101111111111111111101
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to6__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-07.txt'>test-a11/huffman-expected-07.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-07.txt'>test-a11/huffman-actual-07.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to6__top">t</a></td><td class="diff_header" id="from6_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;1&nbsp;2&nbsp;6&nbsp;4&nbsp;3&nbsp;5&nbsp;7</td><td class="diff_next"><a href="#difflib_chg_to6__top">t</a></td><td class="diff_header" id="to6_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;1&nbsp;2&nbsp;6&nbsp;4&nbsp;3&nbsp;5&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_2">2</td><td nowrap="nowrap">12223232444444444322122333333332</td><td class="diff_next"></td><td class="diff_header" id="to6_2">2</td><td nowrap="nowrap">12223232444444444322122333333332</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>huffman.py</code> test 8</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a11/huffman-input-08.txt'>test-a11/huffman-input-08.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>test-a11/test8</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to7__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-expected-08.txt'>test-a11/huffman-expected-08.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a11/huffman-actual-08.txt'>test-a11/huffman-actual-08.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to7__top">t</a></td><td class="diff_header" id="from7_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file&nbsp;test-a11/test8</td><td class="diff_next"><a href="#difflib_chg_to7__top">t</a></td><td class="diff_header" id="to7_1">1</td><td nowrap="nowrap">Input&nbsp;file:&nbsp;ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file&nbsp;test-a11/test8</td></tr>
+        </tbody>
+    </table></div><br><br><table class="diff" summary="Legends"> <tr> <th colspan="2"> Legends </th> </tr> <tr> <td> <table border="" summary="Colors"> <tr><th> Colors </th> </tr> <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr> <tr><td class="diff_chg">Changed</td> </tr> <tr><td class="diff_sub">Deleted</td> </tr> </table></td> <td> <table border="" summary="Links"> <tr><th colspan="2"> Links </th> </tr> <tr><td>(f)irst change</td> </tr> <tr><td>(n)ext change</td> </tr> <tr><td>(t)op</td> </tr> </table></td> </tr> </table><br><br><div class=disclaimer><b>NOTE:</b> This tester gives you an automated way to confirm that your programs are producing the expected output for the examples shown in the assignment specifications, including error cases. <u>Passing the test cases does not guarantee any particular grade: additional and/or different test cases will be included when grading.</u></div>

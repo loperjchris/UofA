@@ -1,0 +1,13 @@
+Street: +------------------------+
+|                        |
+|       xxxxxxxxxx       |
+|       xxxxxxxxxx       |
+|   xxxxxxxxxxxxxxxxxx   |
+|   xxxxxxxxxxxxxxxxxx   |
+|   xxxxxxxxxxxxxxxxxx   |
+|   xxxxxxxxxxxxxxxxxx   |
+| xxxxxxxxxxxxxxxxxxxxxx |
+| xxxxxxxxxxxxxxxxxxxxxx |
+| xxxxxxxxxxxxxxxxxxxxxx |
+|xxxxxxxxxxxxxxxxxxxxxxxx|
++------------------------+

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "dates.py", line 157, in <module>
+    main()
+  File "dates.py", line 147, in main
+    assert line[0] == "I" or line[0] == "R", "ERROR: Illegal operation."
+AssertionError: ERROR: Illegal operation.

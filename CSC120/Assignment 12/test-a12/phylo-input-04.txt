@@ -1,0 +1,2 @@
+test-a12/Influenza-C-small04.fasta
+6

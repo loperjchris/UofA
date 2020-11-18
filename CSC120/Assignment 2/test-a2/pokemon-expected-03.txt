@@ -1,0 +1,3 @@
+Rock: 115.0
+Fighting: 99.0
+Psychic: 116.25

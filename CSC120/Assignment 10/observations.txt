@@ -1,0 +1,8 @@
+fake-news-ms.py hours: 1
+street.py hours: 2.75
+
+I had trouble initially understanding how to begin street.py, but after giving the hints section a quick look I was able to develop a plan for coding the problem and didn't have to use the hints again.
+
+I thought the street.py was very fun and entertaining to code and to see the results of the finished product. What made it very interesting and challenging, but great at the same time, was the lack of structure to the code typically required in our long problems. 
+
+I very much enjoy this class and want to keep improving my Python coding abilities.

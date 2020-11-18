@@ -1,0 +1,1 @@
+cmd_/p4/hr/rtequida/private/csc352/project5/card_driver_dev.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.13.0-170-generic/scripts/module-common.lds --build-id  -o /p4/hr/rtequida/private/csc352/project5/card_driver_dev.ko /p4/hr/rtequida/private/csc352/project5/card_driver_dev.o /p4/hr/rtequida/private/csc352/project5/card_driver_dev.mod.o

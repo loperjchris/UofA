@@ -1,0 +1,25 @@
+rtequida_1: HbVxymbsTtgAHEXeXZvFNFw
+	-The program was removing the first character of the user input string and the answer string and continuing to do so until it reached two
+	characters that didn't match or the end of either string.
+	-First I put a breakpoint in main and disassembled. Next, I put a breakpoint at 'repz cmpsb' and was looking at what it was doing to register edi (my input)
+	and register esi (what I assumed to be the answer). It looked like it was taking the first character of each string and if they matched it would continue doing
+	that and if they didn't or it reached the end of a string while one of the strings still had characters in it it knew the input answer was incorrect. If the 
+	correct answer where put in then all the characters would be removed and the program would know you put in the correct answer.
+
+rtequida_2: rtequida_2
+	-The program takes the user input and copies it into the string it will compare it to. Next, it will get the path to the program that is
+	running and store that into the answer string and then it will take everything after the last '/' (the name of the program being run) and
+	store that into the answer string.
+	-First I put a breakpoint in main and disassembled. Then, I noticed there were functions called 'c', 'x', and 'e' so I put breakpoints at each of those
+	and looked at registers ebx (which I found to be what I had been inputting) and eax (which seemed be be changing with each function call). I then noticed 
+	that after each function call register eax changed from what I input, to the path of this program, then lastly to the name of this program then the test of
+	whether I input the correct password or not was conducted. From there I knew that the name of the program was the answer.
+
+rtequida_3: 
+
+	cmp	%0x2d, %eax  --> 2d = '-'
+	cmp 	%0x2e, %eax  --> 2e = '.'
+	cmp	%0x20, %eax  --> 20 = ' '
+
+	- The answer had to contain exactly 9 of the same character of any other three characters listed above within the first 10 characters of the input string
+	so '....4.....' would be a possible password. 

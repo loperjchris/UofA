@@ -1,0 +1,13 @@
+1999-2-3: Partied like it was 1999!
+Traceback (most recent call last):
+  File "dates.py", line 157, in <module>
+    main()
+  File "dates.py", line 150, in main
+    dateset.add_date_or_event(line[1:])
+  File "dates.py", line 105, in add_date_or_event
+    date = Date(parts[0].strip(), parts[1].strip())
+  File "dates.py", line 22, in __init__
+    self._date = self.canonicalize_date(date)
+  File "dates.py", line 50, in canonicalize_date
+    assert int(date_parts[0]) > 0 and int(date_parts[0]) < 13, "Error: Illegal date."
+AssertionError: Error: Illegal date.

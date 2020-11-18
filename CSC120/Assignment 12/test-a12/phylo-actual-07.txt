@@ -1,0 +1,1 @@
+FASTA file: n-gram size: ERROR: could not open file test-a12/fake.fasta

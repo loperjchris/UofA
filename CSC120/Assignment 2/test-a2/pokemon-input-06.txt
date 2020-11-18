@@ -1,0 +1,12 @@
+test-a2/Pokemon.csv
+total
+Total
+TOTAL
+hp
+attack
+Defense
+SpecialAttack
+SpecialDefense
+Speed
+
+

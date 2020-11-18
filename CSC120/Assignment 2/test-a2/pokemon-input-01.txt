@@ -1,0 +1,7 @@
+test-a2/PokeInfo-tiny.csv
+speed
+ATTACK
+Defense
+hP
+
+

@@ -1,0 +1,4 @@
+The answer is 'abcdef'
+	-The program is taking the user input and increasing every character by one so an 'a' becomes a 'b', a 'b' a 'c', and so on. From the debugger
+	we could see the program wanted a final string of 'bcdefg' so we had to input 'abcdef' so every letter would get bumped up to match the answer
+	string.

@@ -1,0 +1,12 @@
+Bat-SARSlikeCoV.fasta
+Ebola.fasta
+Influenza-C-small01.fasta
+Influenza-C-small02.fasta
+Influenza-C-small03.fasta
+Influenza-C-small04.fasta
+Influenza-C.fasta
+SARS.fasta
+testfiles.txt
+tiny00.fasta
+tiny01.fasta
+tiny02.fasta

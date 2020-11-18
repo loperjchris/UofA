@@ -1,0 +1,7 @@
+test-a2/PokeInfo-small.csv
+total
+Specialattack
+ignorethis
+attAck
+
+

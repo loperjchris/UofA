@@ -1,0 +1,1 @@
+The purpose of the -S switch for the ls command is to list the contents of the current directory sorted by file size.

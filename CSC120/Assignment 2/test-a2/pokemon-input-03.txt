@@ -1,0 +1,7 @@
+test-a2/PokeInfo-100.csv
+Defense
+Attack
+SpeeD
+
+This should not be reached
+Speed

@@ -1,0 +1,2 @@
+test-a6/battleship-err-bad-size.txt
+test-a6/example-guess.txt

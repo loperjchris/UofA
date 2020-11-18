@@ -1,0 +1,18 @@
+Input file: Name 1: Name 2: Friends in common:
+Antonio
+Austin
+Courtney
+Crystal
+Derek
+Eric
+Grace
+Ian
+Jenna
+Jeremy
+Jessica
+Jordan
+Maria
+Michael
+Peter
+Taylor
+Travis

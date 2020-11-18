@@ -1,0 +1,268 @@
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+        <head>
+            <meta http-equiv="Content-Type"
+                  content="text/html; charset=utf-8" />
+            <title></title>
+            <style type="text/css">
+                table.diff {font-family:Courier; border:1px solid black; margin-left: 3em}
+                .diff_header {background-color:#e0e0e0}
+                td.diff_header {text-align:right}
+                .diff_next {background-color:#c0c0c0}
+                .diff_add {background-color:#aaffaa}
+                .diff_chg {background-color:#ffff77}
+                .diff_sub {background-color:#ffaaaa}
+                h1 { font-size: 1.2em; text-decoration: underline; display: inline-block;}
+                h1:hover {cursor: pointer;}
+                h2 { font-size: 1.1em; margin-left: 1em }
+                pre { margin-left: 3em }
+                .notice { color: red; font-size: 2em; text-decoration underline; font-weight: bold }
+                .disclaimer { font-size: 1.2em; border: solid 1px; padding: .5em; font-family: sans-serif }
+                .arrow {height: 0px; width: 0px; border-top: 10px solid black; border-left: 6px solid transparent; border-right: 6px solid transparent; transform: rotate(270deg); display:inline-block;}
+                .arrow:hover {cursor: pointer;}
+            </style>
+            <script>
+            var output_view = function(elem) {
+                arrow_elem = elem;
+                if (arrow_elem.className != "arrow") {
+                    arrow_elem = elem.nextElementSibling;
+                    if (arrow_elem.className != "arrow") {
+                        return;
+                    }
+                }
+                if (arrow_elem.style.transform != "rotate(0deg)") {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "inline-block";
+                    arrow_elem.style.transform = "rotate(0deg)"
+                } else {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "none";
+                    arrow_elem.style.transform = "rotate(270deg)"
+                }
+            }
+            </script>
+        <body>
+            
+            <h1 onclick="output_view(this)">Difference on <code>dates.py</code> test 1</h1>
+            
+            <br>
+            <div class="test-display" style="display: inline-block;">
+            <h2>Input: (<code><a href='test-a4/dates-input-01.txt'>test-a4/dates-input-01.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a4/invalid.txt>test-a4/invalid.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a4/invalid.txt>test-a4/invalid.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+I 2/3/1999: Partied like it was 1999!
+R Feb 3 1999
+I 13/10/2001: this ain't no date!
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-expected-01.txt'>test-a4/dates-expected-01.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-actual-01.txt'>test-a4/dates-actual-01.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next" id="difflib_chg_to0__1"><a href="#difflib_chg_to0__0">f</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">1999-2-3:&nbsp;Partied&nbsp;like&nbsp;it&nbsp;was&nbsp;1999!</td><td class="diff_next"><a href="#difflib_chg_to0__0">f</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap">1999-2-3:&nbsp;Partied&nbsp;like&nbsp;it&nbsp;was&nbsp;1999!</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">Traceback&nbsp;(most&nbsp;recent&nbsp;call&nbsp;last):</td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap">Traceback&nbsp;(most&nbsp;recent&nbsp;call&nbsp;last):</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__1">n</a></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;1<span class="diff_chg">57</span>,&nbsp;in&nbsp;&lt;module&gt;</td><td class="diff_next"><a href="#difflib_chg_to0__1">n</a></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;1<span class="diff_chg">94</span>,&nbsp;in&nbsp;&lt;module&gt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_4">4</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;main()</td><td class="diff_next"></td><td class="diff_header" id="to0_4">4</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;main()</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="from0_5">5</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;1<span class="diff_sub">5</span>0,&nbsp;in&nbsp;main</td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_5">5</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;10<span class="diff_add">3</span>,&nbsp;in&nbsp;main</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_6">6</td><td nowrap="nowrap"><span class="diff_sub">&nbsp;&nbsp;&nbsp;&nbsp;dateset.add_date_or_event(line[1:])</span></td><td class="diff_next"></td><td class="diff_header" id="to0_6">6</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;set_dates()</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_7">7</td><td nowrap="nowrap"><span class="diff_sub">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;105,&nbsp;in&nbsp;add_date_or_event</span></td><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_8">8</td><td nowrap="nowrap"><span class="diff_sub">&nbsp;&nbsp;&nbsp;&nbsp;date&nbsp;=&nbsp;Date(parts[0].strip(),&nbsp;parts[1].strip())</span></td><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_9">9</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;<span class="diff_chg">2</span>2,&nbsp;in&nbsp;<span class="diff_chg">__ini</span>t_<span class="diff_chg">_</span></td><td class="diff_next"></td><td class="diff_header" id="to0_7">7</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;<span class="diff_chg">13</span>2,&nbsp;in&nbsp;<span class="diff_chg">se</span>t_<span class="diff_chg">dates</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_10">10</td><td nowrap="nowrap"><span class="diff_sub">&nbsp;&nbsp;&nbsp;&nbsp;self._date&nbsp;=&nbsp;self.canonicalize_date(date)</span></td><td class="diff_next"></td><td class="diff_header" id="to0_8">8</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;date_line&nbsp;=&nbsp;format_date(date_line)</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_11">11</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;<span class="diff_chg">50</span>,&nbsp;in&nbsp;<span class="diff_chg">c</span>a<span class="diff_chg">nonicalize</span>_date</td><td class="diff_next"></td><td class="diff_header" id="to0_9">9</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;<span class="diff_chg">191</span>,&nbsp;in&nbsp;<span class="diff_chg">form</span>a<span class="diff_chg">t</span>_date</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_12">12</td><td nowrap="nowrap"><span class="diff_sub">&nbsp;&nbsp;&nbsp;&nbsp;assert&nbsp;int(date_parts[0])&nbsp;&gt;&nbsp;0&nbsp;and&nbsp;int(date_parts[0])&nbsp;&lt;&nbsp;13,&nbsp;"Error:&nbsp;Illegal&nbsp;date."</span></td><td class="diff_next"></td><td class="diff_header" id="to0_10">10</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;assert&nbsp;int(month)&nbsp;&lt;=&nbsp;12&nbsp;and&nbsp;int(day)&nbsp;&lt;=&nbsp;31,&nbsp;"ERROR:&nbsp;Illegal&nbsp;date."</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_13">13</td><td nowrap="nowrap">AssertionError:&nbsp;E<span class="diff_chg">rror</span>:&nbsp;Illegal&nbsp;date.</td><td class="diff_next"></td><td class="diff_header" id="to0_11">11</td><td nowrap="nowrap">AssertionError:&nbsp;E<span class="diff_chg">RROR</span>:&nbsp;Illegal&nbsp;date.</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>dates.py</code> test 2</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a4/dates-input-02.txt'>test-a4/dates-input-02.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a4/in02.txt>test-a4/in02.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a4/in02.txt>test-a4/in02.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+I 2017-01-01 : New Year's Day
+R 2017-01-01
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to1__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-expected-02.txt'>test-a4/dates-expected-02.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-actual-02.txt'>test-a4/dates-actual-02.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="from1_1">1</td><td nowrap="nowrap">2017-1-1:&nbsp;New&nbsp;Year's&nbsp;Day</td><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="to1_1">1</td><td nowrap="nowrap">2017-1-1:&nbsp;New&nbsp;Year's&nbsp;Day</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Difference on <code>dates.py</code> test 3</h1>
+            
+            <br>
+            <div class="test-display" style="display: inline-block;">
+            <h2>Input: (<code><a href='test-a4/dates-input-03.txt'>test-a4/dates-input-03.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a4/wrongop.txt>test-a4/wrongop.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a4/wrongop.txt>test-a4/wrongop.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+a 10/08/2051: a magical event happened
+R Oct 8 2051
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to2__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-expected-03.txt'>test-a4/dates-expected-03.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-actual-03.txt'>test-a4/dates-actual-03.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next" id="difflib_chg_to2__1"><a href="#difflib_chg_to2__0">f</a></td><td class="diff_header" id="from2_1">1</td><td nowrap="nowrap">Traceback&nbsp;(most&nbsp;recent&nbsp;call&nbsp;last):</td><td class="diff_next"><a href="#difflib_chg_to2__0">f</a></td><td class="diff_header" id="to2_1">1</td><td nowrap="nowrap">Traceback&nbsp;(most&nbsp;recent&nbsp;call&nbsp;last):</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to2__1">n</a></td><td class="diff_header" id="from2_2">2</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;1<span class="diff_chg">57</span>,&nbsp;in&nbsp;&lt;module&gt;</td><td class="diff_next"><a href="#difflib_chg_to2__1">n</a></td><td class="diff_header" id="to2_2">2</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;1<span class="diff_chg">94</span>,&nbsp;in&nbsp;&lt;module&gt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_3">3</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;main()</td><td class="diff_next"></td><td class="diff_header" id="to2_3">3</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;main()</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="from2_4">4</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;1<span class="diff_chg">47</span>,&nbsp;in&nbsp;main</td><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="to2_4">4</td><td nowrap="nowrap">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;1<span class="diff_chg">03</span>,&nbsp;in&nbsp;main</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_5">5</td><td nowrap="nowrap"><span class="diff_sub">&nbsp;&nbsp;&nbsp;&nbsp;assert&nbsp;line[0]&nbsp;==&nbsp;"I"&nbsp;or&nbsp;line[0]&nbsp;==&nbsp;"R",&nbsp;"ERROR:&nbsp;Illegal&nbsp;operation."</span></td><td class="diff_next"></td><td class="diff_header" id="to2_5">5</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;set_dates()</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to2_6">6</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;File&nbsp;"dates.py",&nbsp;line&nbsp;129,&nbsp;in&nbsp;set_dates</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to2_7">7</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;"ERROR:&nbsp;Illegal&nbsp;operation."</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_6">6</td><td nowrap="nowrap">AssertionError:&nbsp;ERROR:&nbsp;Illegal&nbsp;operation.</td><td class="diff_next"></td><td class="diff_header" id="to2_8">8</td><td nowrap="nowrap">AssertionError:&nbsp;ERROR:&nbsp;Illegal&nbsp;operation.</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>dates.py</code> test 4</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a4/dates-input-04.txt'>test-a4/dates-input-04.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a4/in01.txt>test-a4/in01.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a4/in01.txt>test-a4/in01.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+I 2017-01-01 : New Year's Day
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to3__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-expected-04.txt'>test-a4/dates-expected-04.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-actual-04.txt'>test-a4/dates-actual-04.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td></td><td>&nbsp;Empty File&nbsp;</td><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td></td><td>&nbsp;Empty File&nbsp;</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>dates.py</code> test 5</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a4/dates-input-05.txt'>test-a4/dates-input-05.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a4/in03.txt>test-a4/in03.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a4/in03.txt>test-a4/in03.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+I 2017-01-01 : New Year's Day
+I Jan 1 2017 : New Year party
+R 2017-01-01
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to4__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-expected-05.txt'>test-a4/dates-expected-05.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-actual-05.txt'>test-a4/dates-actual-05.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="from4_1">1</td><td nowrap="nowrap">2017-1-1:&nbsp;New&nbsp;Year&nbsp;party</td><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="to4_1">1</td><td nowrap="nowrap">2017-1-1:&nbsp;New&nbsp;Year&nbsp;party</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_2">2</td><td nowrap="nowrap">2017-1-1:&nbsp;New&nbsp;Year's&nbsp;Day</td><td class="diff_next"></td><td class="diff_header" id="to4_2">2</td><td nowrap="nowrap">2017-1-1:&nbsp;New&nbsp;Year's&nbsp;Day</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>dates.py</code> test 6</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a4/dates-input-06.txt'>test-a4/dates-input-06.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a4/in04.txt>test-a4/in04.txt</a></pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a4/in04.txt>test-a4/in04.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+I 1960-02-27 : U.S. Olympic hockey team beats Soviet Union
+I 1897-2-27 : Britain recognizes U.S. authority over Western Hemisphere
+I Apr 5 1974 : World Trade Center, then the world's tallest building, opens in New York
+I 1946-1-10: UN General Assembly meets for 1st time (London)
+R Feb 27 1960
+I 3/4/1861 : Abraham Lincoln is inaugurated as 16th US President
+I 4/5/1242: Alexander Nevsky of Novgorod defeats Teutonic Knights in the Battle of the Ice
+I Apr 5 1879 : Chile declares war on Bolivia and Peru, starting the War of the Pacific
+R 1879-04-05
+I 6/25/1667 : First blood transfusion performed by French Doctor Jean-Baptiste Denys
+I 1876-06-25 : Battle of the Little Bighorn
+R 6/25/1876
+I Jul 20 1881 : Sioux Indian Chief Sitting Bull, surrenders to US federal troops
+I Jul 20 1921: Congresswoman Alice Mary Robertson becomes the first woman to preside over the US House of Representatives
+I 1954-07-20: Armistice for Indo-China signed, Vietnam separates into North & South
+I 1969-7-20: 1st Moon Landing: Neil Armstrong and Buzz Aldrin from Apollo 11
+R 7/20/1921
+R 07/20/1969
+R Jul 20 1954
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to5__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-expected-06.txt'>test-a4/dates-expected-06.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a4/dates-actual-06.txt'>test-a4/dates-actual-06.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="from5_1">1</td><td nowrap="nowrap">1960-2-27:&nbsp;U.S.&nbsp;Olympic&nbsp;hockey&nbsp;team&nbsp;beats&nbsp;Soviet&nbsp;Union</td><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="to5_1">1</td><td nowrap="nowrap">1960-2-27:&nbsp;U.S.&nbsp;Olympic&nbsp;hockey&nbsp;team&nbsp;beats&nbsp;Soviet&nbsp;Union</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_2">2</td><td nowrap="nowrap">1879-4-5:&nbsp;Chile&nbsp;declares&nbsp;war&nbsp;on&nbsp;Bolivia&nbsp;and&nbsp;Peru,&nbsp;starting&nbsp;the&nbsp;War&nbsp;of&nbsp;the&nbsp;Pacific</td><td class="diff_next"></td><td class="diff_header" id="to5_2">2</td><td nowrap="nowrap">1879-4-5:&nbsp;Chile&nbsp;declares&nbsp;war&nbsp;on&nbsp;Bolivia&nbsp;and&nbsp;Peru,&nbsp;starting&nbsp;the&nbsp;War&nbsp;of&nbsp;the&nbsp;Pacific</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_3">3</td><td nowrap="nowrap">1876-6-25:&nbsp;Battle&nbsp;of&nbsp;the&nbsp;Little&nbsp;Bighorn</td><td class="diff_next"></td><td class="diff_header" id="to5_3">3</td><td nowrap="nowrap">1876-6-25:&nbsp;Battle&nbsp;of&nbsp;the&nbsp;Little&nbsp;Bighorn</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_4">4</td><td nowrap="nowrap">1921-7-20:&nbsp;Congresswoman&nbsp;Alice&nbsp;Mary&nbsp;Robertson&nbsp;becomes&nbsp;the&nbsp;first&nbsp;woman&nbsp;to&nbsp;preside&nbsp;over&nbsp;the&nbsp;US&nbsp;House&nbsp;of&nbsp;Representatives</td><td class="diff_next"></td><td class="diff_header" id="to5_4">4</td><td nowrap="nowrap">1921-7-20:&nbsp;Congresswoman&nbsp;Alice&nbsp;Mary&nbsp;Robertson&nbsp;becomes&nbsp;the&nbsp;first&nbsp;woman&nbsp;to&nbsp;preside&nbsp;over&nbsp;the&nbsp;US&nbsp;House&nbsp;of&nbsp;Representatives</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_5">5</td><td nowrap="nowrap">1969-7-20:&nbsp;1st&nbsp;Moon&nbsp;Landing:&nbsp;Neil&nbsp;Armstrong&nbsp;and&nbsp;Buzz&nbsp;Aldrin&nbsp;from&nbsp;Apollo&nbsp;11</td><td class="diff_next"></td><td class="diff_header" id="to5_5">5</td><td nowrap="nowrap">1969-7-20:&nbsp;1st&nbsp;Moon&nbsp;Landing:&nbsp;Neil&nbsp;Armstrong&nbsp;and&nbsp;Buzz&nbsp;Aldrin&nbsp;from&nbsp;Apollo&nbsp;11</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_6">6</td><td nowrap="nowrap">1954-7-20:&nbsp;Armistice&nbsp;for&nbsp;Indo-China&nbsp;signed,&nbsp;Vietnam&nbsp;separates&nbsp;into&nbsp;North&nbsp;&amp;&nbsp;South</td><td class="diff_next"></td><td class="diff_header" id="to5_6">6</td><td nowrap="nowrap">1954-7-20:&nbsp;Armistice&nbsp;for&nbsp;Indo-China&nbsp;signed,&nbsp;Vietnam&nbsp;separates&nbsp;into&nbsp;North&nbsp;&amp;&nbsp;South</td></tr>
+        </tbody>
+    </table></div><br><br><table class="diff" summary="Legends"> <tr> <th colspan="2"> Legends </th> </tr> <tr> <td> <table border="" summary="Colors"> <tr><th> Colors </th> </tr> <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr> <tr><td class="diff_chg">Changed</td> </tr> <tr><td class="diff_sub">Deleted</td> </tr> </table></td> <td> <table border="" summary="Links"> <tr><th colspan="2"> Links </th> </tr> <tr><td>(f)irst change</td> </tr> <tr><td>(n)ext change</td> </tr> <tr><td>(t)op</td> </tr> </table></td> </tr> </table><br><br><div class=disclaimer><b>NOTE:</b> This tester gives you an automated way to confirm that your programs are producing the expected output for the examples shown in the assignment specifications, including error cases. <u>Passing the test cases does not guarantee any particular grade: additional and/or different test cases will be included when grading.</u></div>

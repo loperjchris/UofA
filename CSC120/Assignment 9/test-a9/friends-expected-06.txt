@@ -1,0 +1,7 @@
+Input file: Name 1: Name 2: Friends in common:
+Derek
+Eric
+Grace
+Jenna
+Jessica
+Madison

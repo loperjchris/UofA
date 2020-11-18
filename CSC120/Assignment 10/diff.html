@@ -1,0 +1,643 @@
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+        <head>
+            <meta http-equiv="Content-Type"
+                  content="text/html; charset=utf-8" />
+            <title></title>
+            <style type="text/css">
+                table.diff {font-family:Courier; border:1px solid black; margin-left: 3em}
+                .diff_header {background-color:#e0e0e0}
+                td.diff_header {text-align:right}
+                .diff_next {background-color:#c0c0c0}
+                .diff_add {background-color:#aaffaa}
+                .diff_chg {background-color:#ffff77}
+                .diff_sub {background-color:#ffaaaa}
+                h1 { font-size: 1.2em; text-decoration: underline; display: inline-block;}
+                h1:hover {cursor: pointer;}
+                h2 { font-size: 1.1em; margin-left: 1em }
+                pre { margin-left: 3em }
+                .notice { color: red; font-size: 2em; text-decoration underline; font-weight: bold }
+                .disclaimer { font-size: 1.2em; border: solid 1px; padding: .5em; font-family: sans-serif }
+                .arrow {height: 0px; width: 0px; border-top: 10px solid black; border-left: 6px solid transparent; border-right: 6px solid transparent; transform: rotate(270deg); display:inline-block;}
+                .arrow:hover {cursor: pointer;}
+            </style>
+            <script>
+            var output_view = function(elem) {
+                arrow_elem = elem;
+                if (arrow_elem.className != "arrow") {
+                    arrow_elem = elem.nextElementSibling;
+                    if (arrow_elem.className != "arrow") {
+                        return;
+                    }
+                }
+                if (arrow_elem.style.transform != "rotate(0deg)") {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "inline-block";
+                    arrow_elem.style.transform = "rotate(0deg)"
+                } else {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "none";
+                    arrow_elem.style.transform = "rotate(270deg)"
+                }
+            }
+            </script>
+        <body>
+            
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 1</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-01.txt'>test-a10/street-input-01.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>b:4,7,=</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-01.txt'>test-a10/street-expected-01.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-01.txt'>test-a10/street-actual-01.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">Street:&nbsp;+----+</td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap">Street:&nbsp;+----+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">|====|</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">|====|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_4">4</td><td nowrap="nowrap">|====|</td><td class="diff_next"></td><td class="diff_header" id="to0_4">4</td><td nowrap="nowrap">|====|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_5">5</td><td nowrap="nowrap">|====|</td><td class="diff_next"></td><td class="diff_header" id="to0_5">5</td><td nowrap="nowrap">|====|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_6">6</td><td nowrap="nowrap">|====|</td><td class="diff_next"></td><td class="diff_header" id="to0_6">6</td><td nowrap="nowrap">|====|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_7">7</td><td nowrap="nowrap">|====|</td><td class="diff_next"></td><td class="diff_header" id="to0_7">7</td><td nowrap="nowrap">|====|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_8">8</td><td nowrap="nowrap">|====|</td><td class="diff_next"></td><td class="diff_header" id="to0_8">8</td><td nowrap="nowrap">|====|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_9">9</td><td nowrap="nowrap">|====|</td><td class="diff_next"></td><td class="diff_header" id="to0_9">9</td><td nowrap="nowrap">|====|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_10">10</td><td nowrap="nowrap">+----+</td><td class="diff_next"></td><td class="diff_header" id="to0_10">10</td><td nowrap="nowrap">+----+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 2</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-02.txt'>test-a10/street-input-02.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>p:5,+</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to1__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-02.txt'>test-a10/street-expected-02.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-02.txt'>test-a10/street-actual-02.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="from1_1">1</td><td nowrap="nowrap">Street:&nbsp;+-----+</td><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="to1_1">1</td><td nowrap="nowrap">Street:&nbsp;+-----+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to1_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;+&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to1_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;+&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_4">4</td><td nowrap="nowrap">|&nbsp;+++&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to1_4">4</td><td nowrap="nowrap">|&nbsp;+++&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_5">5</td><td nowrap="nowrap">|+++++|</td><td class="diff_next"></td><td class="diff_header" id="to1_5">5</td><td nowrap="nowrap">|+++++|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to1_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to1_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_8">8</td><td nowrap="nowrap">+-----+</td><td class="diff_next"></td><td class="diff_header" id="to1_8">8</td><td nowrap="nowrap">+-----+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 3</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-03.txt'>test-a10/street-input-03.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>p:21,-</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to2__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-03.txt'>test-a10/street-expected-03.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-03.txt'>test-a10/street-actual-03.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="from2_1">1</td><td nowrap="nowrap">Street:&nbsp;+---------------------+</td><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="to2_1">1</td><td nowrap="nowrap">Street:&nbsp;+---------------------+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to2_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to2_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to2_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to2_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to2_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to2_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_8">8</td><td nowrap="nowrap">+---------------------+</td><td class="diff_next"></td><td class="diff_header" id="to2_8">8</td><td nowrap="nowrap">+---------------------+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 4</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-04.txt'>test-a10/street-input-04.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>e:10,_._`</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to3__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-04.txt'>test-a10/street-expected-04.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-04.txt'>test-a10/street-actual-04.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="from3_1">1</td><td nowrap="nowrap">Street:&nbsp;+----------+</td><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="to3_1">1</td><td nowrap="nowrap">Street:&nbsp;+----------+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from3_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to3_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from3_3">3</td><td nowrap="nowrap">|&nbsp;.&nbsp;`&nbsp;.&nbsp;`&nbsp;.|</td><td class="diff_next"></td><td class="diff_header" id="to3_3">3</td><td nowrap="nowrap">|&nbsp;.&nbsp;`&nbsp;.&nbsp;`&nbsp;.|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from3_4">4</td><td nowrap="nowrap">+----------+</td><td class="diff_next"></td><td class="diff_header" id="to3_4">4</td><td nowrap="nowrap">+----------+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 5</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-05.txt'>test-a10/street-input-05.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>p:19,* b:5,7,x e:7,__~</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to4__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-05.txt'>test-a10/street-expected-05.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-05.txt'>test-a10/street-actual-05.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="from4_1">1</td><td nowrap="nowrap">Street:&nbsp;+-------------------------------+</td><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="to4_1">1</td><td nowrap="nowrap">Street:&nbsp;+-------------------------------+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_8">8</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_8">8</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_9">9</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;~&nbsp;&nbsp;~&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to4_9">9</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxx&nbsp;&nbsp;~&nbsp;&nbsp;~&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_10">10</td><td nowrap="nowrap">+-------------------------------+</td><td class="diff_next"></td><td class="diff_header" id="to4_10">10</td><td nowrap="nowrap">+-------------------------------+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 6</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-06.txt'>test-a10/street-input-06.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>p:5,+  b:4,7,=  e:10,_._`  b:3,3,:  p:21,-</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to5__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-06.txt'>test-a10/street-expected-06.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-06.txt'>test-a10/street-actual-06.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="from5_1">1</td><td nowrap="nowrap">Street:&nbsp;+-------------------------------------------+</td><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="to5_1">1</td><td nowrap="nowrap">Street:&nbsp;+-------------------------------------------+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;+&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;+&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_6">6</td><td nowrap="nowrap">|&nbsp;+++&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_6">6</td><td nowrap="nowrap">|&nbsp;+++&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_7">7</td><td nowrap="nowrap">|+++++====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_7">7</td><td nowrap="nowrap">|+++++====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_8">8</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_8">8</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_9">9</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;====&nbsp;.&nbsp;`&nbsp;.&nbsp;`&nbsp;.:::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to5_9">9</td><td nowrap="nowrap">|&nbsp;&nbsp;|&nbsp;&nbsp;====&nbsp;.&nbsp;`&nbsp;.&nbsp;`&nbsp;.:::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_10">10</td><td nowrap="nowrap">+-------------------------------------------+</td><td class="diff_next"></td><td class="diff_header" id="to5_10">10</td><td nowrap="nowrap">+-------------------------------------------+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 7</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-07.txt'>test-a10/street-input-07.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>b:1,1,x  b:2,4,x b:4,8,x b:10,10,x b:4,8,x  b:2,4,x  b:1,1,x</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to6__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-07.txt'>test-a10/street-expected-07.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-07.txt'>test-a10/street-actual-07.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to6__top">t</a></td><td class="diff_header" id="from6_1">1</td><td nowrap="nowrap">Street:&nbsp;+------------------------+</td><td class="diff_next"><a href="#difflib_chg_to6__top">t</a></td><td class="diff_header" id="to6_1">1</td><td nowrap="nowrap">Street:&nbsp;+------------------------+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_8">8</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_8">8</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_9">9</td><td nowrap="nowrap">|&nbsp;xxxxxxxxxxxxxxxxxxxxxx&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_9">9</td><td nowrap="nowrap">|&nbsp;xxxxxxxxxxxxxxxxxxxxxx&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_10">10</td><td nowrap="nowrap">|&nbsp;xxxxxxxxxxxxxxxxxxxxxx&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_10">10</td><td nowrap="nowrap">|&nbsp;xxxxxxxxxxxxxxxxxxxxxx&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_11">11</td><td nowrap="nowrap">|&nbsp;xxxxxxxxxxxxxxxxxxxxxx&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to6_11">11</td><td nowrap="nowrap">|&nbsp;xxxxxxxxxxxxxxxxxxxxxx&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_12">12</td><td nowrap="nowrap">|xxxxxxxxxxxxxxxxxxxxxxxx|</td><td class="diff_next"></td><td class="diff_header" id="to6_12">12</td><td nowrap="nowrap">|xxxxxxxxxxxxxxxxxxxxxxxx|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from6_13">13</td><td nowrap="nowrap">+------------------------+</td><td class="diff_next"></td><td class="diff_header" id="to6_13">13</td><td nowrap="nowrap">+------------------------+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>street.py</code> test 8</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/street-input-08.txt'>test-a10/street-input-08.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>b:3,10,a e:10,+- p:13,* b:7,15,x b:17,4,% b:10,8,y e:5,_ b:1,3,$ p:13,^ b:10,3,# e:9,__.</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to7__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-expected-08.txt'>test-a10/street-expected-08.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/street-actual-08.txt'>test-a10/street-actual-08.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to7__top">t</a></td><td class="diff_header" id="from7_1">1</td><td nowrap="nowrap">Street:&nbsp;+--------------------------------------------------------------------------------------------------+</td><td class="diff_next"><a href="#difflib_chg_to7__top">t</a></td><td class="diff_header" id="to7_1">1</td><td nowrap="nowrap">Street:&nbsp;+--------------------------------------------------------------------------------------------------+</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_2">2</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_3">3</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_4">4</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_5">5</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_6">6</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_7">7</td><td nowrap="nowrap">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_8">8</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_8">8</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_9">9</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_9">9</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_10">10</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_10">10</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_11">11</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_11">11</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_12">12</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_12">12</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_13">13</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_13">13</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_14">14</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^^^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_14">14</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^^^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_15">15</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;&nbsp;^^^^^&nbsp;&nbsp;&nbsp;&nbsp;##########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_15">15</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;&nbsp;^^^^^&nbsp;&nbsp;&nbsp;&nbsp;##########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_16">16</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td><td class="diff_next"></td><td class="diff_header" id="to7_16">16</td><td nowrap="nowrap">|aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_17">17</td><td nowrap="nowrap">|aaa+-+-+-+-+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##########&nbsp;&nbsp;.&nbsp;&nbsp;.&nbsp;&nbsp;.|</td><td class="diff_next"></td><td class="diff_header" id="to7_17">17</td><td nowrap="nowrap">|aaa+-+-+-+-+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxx%%%%%%%%%%%%%%%%%yyyyyyyyyy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##########&nbsp;&nbsp;.&nbsp;&nbsp;.&nbsp;&nbsp;.|</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from7_18">18</td><td nowrap="nowrap">+--------------------------------------------------------------------------------------------------+</td><td class="diff_next"></td><td class="diff_header" id="to7_18">18</td><td nowrap="nowrap">+--------------------------------------------------------------------------------------------------+</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>fake-news-ms.py</code> test 1</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/fake-news-ms-input-01.txt'>test-a10/fake-news-ms-input-01.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a10/in100.csv>test-a10/in100.csv</a></pre>
+<tr><td><pre style='margin:0;'>5</pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a10/in100.csv>test-a10/in100.csv</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+#uuid,ord_in_thread,author,published,title,language,crawled,site_url,country,domain_rank,thread_title,spam_score,main_img_url,replies_count,participants_count,likes,comments,shares,type
+6a175f46bcd24d39b3e962ad0f29936721db70db,0,Barracuda Brigade,2016-10-26T21:41:00.000+03:00,Muslims BUSTED: They Stole Millions In Gov t Benefits,english,2016-10-27T01:49:27.168+03:00,100percentfedup.com,US,25689,Muslims BUSTED: They Stole Millions In Gov t Benefits,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10262016-83501-AM.bmp.jpg,0,1,0,0,0,bias
+2bdc29d12605ef9cf3f09f9875040a7113be5d5b,0,reasoning with facts,2016-10-29T08:47:11.259+03:00,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,english,2016-10-29T08:47:11.259+03:00,100percentfedup.com,US,25689,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10282016-102616-PM.bmp.jpg,0,1,0,0,0,bias
+c70e149fdd53de5e61c29281100b9de0ed268bc3,0,Barracuda Brigade,2016-10-31T01:41:49.479+02:00,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,english,2016-10-31T01:41:49.479+02:00,100percentfedup.com,US,25689,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10302016-60437-PM.bmp.jpg,0,1,0,0,0,bias
+7cf7c15731ac2a116dd7f629bd57ea468ed70284,0,Fed Up,2016-11-01T05:22:00.000+02:00,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",english,2016-11-01T15:46:26.304+02:00,100percentfedup.com,US,25689,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",0.068,http://100percentfedup.com/wp-content/uploads/2016/10/kayla.jpg,0,0,0,0,0,bias
+0206b54719c7e241ffe0ad4315b808290dbe6c0f,0,Fed Up,2016-11-01T21:56:00.000+02:00,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,english,2016-11-01T23:59:42.266+02:00,100percentfedup.com,US,25689,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,0.865,http://100percentfedup.com/wp-content/uploads/2016/11/obamacare-sites-404-970x0.jpg,0,0,0,0,0,bias
+8f30f5ea14c9d5914a9fe4f55ab2581772af4c31,0,Barracuda Brigade,2016-11-02T16:31:28.550+02:00,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),english,2016-11-02T16:31:28.550+02:00,100percentfedup.com,US,25689,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),0,http://bb4sp.com/wp-content/uploads/2016/11/Fullscreen-capture-1122016-74311-AM.bmp.jpg,0,1,0,0,0,bias
+d3cc0fe38f41a59f7c48f8c3528ca5f74193148f,0,Fed Up,2016-11-04T19:40:00.000+02:00,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",english,2016-11-05T02:13:46.065+02:00,100percentfedup.com,US,25689,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",0.701,http://100percentfedup.com/wp-content/uploads/2016/11/hillary-looking-down.jpg,0,0,0,0,0,bias
+b4bbf8b5c19e8864f5257832a58b81ef4ed2d4e4,0,Fed Up,2016-11-05T01:19:00.000+02:00,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,english,2016-11-05T05:59:07.458+02:00,100percentfedup.com,US,25689,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,0.188,http://100percentfedup.com/wp-content/uploads/2016/11/snipes-dem.jpg,0,0,0,0,0,bias
+a19aabaa5a61eb8bc22fadaaa003e5fbba5c4bf6,0,Fed Up,2016-11-06T23:54:00.000+02:00,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,english,2016-11-07T10:20:06.409+02:00,100percentfedup.com,US,25689,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,0.144,http://100percentfedup.com/wp-content/uploads/2016/05/hillary-comey.jpg,0,0,0,0,0,bias
+f54d8e13010d0a79893995ee65360ad4b38b5a35,0,Fed Up,2016-11-07T02:43:00.000+02:00,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",english,2016-11-07T10:20:27.252+02:00,100percentfedup.com,US,25689,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",0.995,http://100percentfedup.com/wp-content/uploads/2016/11/TRUCK-TORCHED-HILLARY.jpg,0,0,0,0,0,bias
+[...36766 additional characters not shown...]</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to8__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-expected-01.txt'>test-a10/fake-news-ms-expected-01.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-actual-01.txt'>test-a10/fake-news-ms-actual-01.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to8__top">t</a></td><td class="diff_header" id="from8_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;35</td><td class="diff_next"><a href="#difflib_chg_to8__top">t</a></td><td class="diff_header" id="to8_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;35</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from8_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;35</td><td class="diff_next"></td><td class="diff_header" id="to8_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;35</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from8_3">3</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;22</td><td class="diff_next"></td><td class="diff_header" id="to8_3">3</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;22</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from8_4">4</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;21</td><td class="diff_next"></td><td class="diff_header" id="to8_4">4</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;21</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from8_5">5</td><td nowrap="nowrap">video&nbsp;:&nbsp;20</td><td class="diff_next"></td><td class="diff_header" id="to8_5">5</td><td nowrap="nowrap">video&nbsp;:&nbsp;20</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from8_6">6</td><td nowrap="nowrap">for&nbsp;:&nbsp;15</td><td class="diff_next"></td><td class="diff_header" id="to8_6">6</td><td nowrap="nowrap">for&nbsp;:&nbsp;15</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>fake-news-ms.py</code> test 2</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/fake-news-ms-input-02.txt'>test-a10/fake-news-ms-input-02.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a10/in100.csv>test-a10/in100.csv</a></pre>
+<tr><td><pre style='margin:0;'>10</pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a10/in100.csv>test-a10/in100.csv</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+#uuid,ord_in_thread,author,published,title,language,crawled,site_url,country,domain_rank,thread_title,spam_score,main_img_url,replies_count,participants_count,likes,comments,shares,type
+6a175f46bcd24d39b3e962ad0f29936721db70db,0,Barracuda Brigade,2016-10-26T21:41:00.000+03:00,Muslims BUSTED: They Stole Millions In Gov t Benefits,english,2016-10-27T01:49:27.168+03:00,100percentfedup.com,US,25689,Muslims BUSTED: They Stole Millions In Gov t Benefits,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10262016-83501-AM.bmp.jpg,0,1,0,0,0,bias
+2bdc29d12605ef9cf3f09f9875040a7113be5d5b,0,reasoning with facts,2016-10-29T08:47:11.259+03:00,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,english,2016-10-29T08:47:11.259+03:00,100percentfedup.com,US,25689,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10282016-102616-PM.bmp.jpg,0,1,0,0,0,bias
+c70e149fdd53de5e61c29281100b9de0ed268bc3,0,Barracuda Brigade,2016-10-31T01:41:49.479+02:00,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,english,2016-10-31T01:41:49.479+02:00,100percentfedup.com,US,25689,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10302016-60437-PM.bmp.jpg,0,1,0,0,0,bias
+7cf7c15731ac2a116dd7f629bd57ea468ed70284,0,Fed Up,2016-11-01T05:22:00.000+02:00,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",english,2016-11-01T15:46:26.304+02:00,100percentfedup.com,US,25689,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",0.068,http://100percentfedup.com/wp-content/uploads/2016/10/kayla.jpg,0,0,0,0,0,bias
+0206b54719c7e241ffe0ad4315b808290dbe6c0f,0,Fed Up,2016-11-01T21:56:00.000+02:00,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,english,2016-11-01T23:59:42.266+02:00,100percentfedup.com,US,25689,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,0.865,http://100percentfedup.com/wp-content/uploads/2016/11/obamacare-sites-404-970x0.jpg,0,0,0,0,0,bias
+8f30f5ea14c9d5914a9fe4f55ab2581772af4c31,0,Barracuda Brigade,2016-11-02T16:31:28.550+02:00,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),english,2016-11-02T16:31:28.550+02:00,100percentfedup.com,US,25689,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),0,http://bb4sp.com/wp-content/uploads/2016/11/Fullscreen-capture-1122016-74311-AM.bmp.jpg,0,1,0,0,0,bias
+d3cc0fe38f41a59f7c48f8c3528ca5f74193148f,0,Fed Up,2016-11-04T19:40:00.000+02:00,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",english,2016-11-05T02:13:46.065+02:00,100percentfedup.com,US,25689,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",0.701,http://100percentfedup.com/wp-content/uploads/2016/11/hillary-looking-down.jpg,0,0,0,0,0,bias
+b4bbf8b5c19e8864f5257832a58b81ef4ed2d4e4,0,Fed Up,2016-11-05T01:19:00.000+02:00,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,english,2016-11-05T05:59:07.458+02:00,100percentfedup.com,US,25689,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,0.188,http://100percentfedup.com/wp-content/uploads/2016/11/snipes-dem.jpg,0,0,0,0,0,bias
+a19aabaa5a61eb8bc22fadaaa003e5fbba5c4bf6,0,Fed Up,2016-11-06T23:54:00.000+02:00,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,english,2016-11-07T10:20:06.409+02:00,100percentfedup.com,US,25689,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,0.144,http://100percentfedup.com/wp-content/uploads/2016/05/hillary-comey.jpg,0,0,0,0,0,bias
+f54d8e13010d0a79893995ee65360ad4b38b5a35,0,Fed Up,2016-11-07T02:43:00.000+02:00,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",english,2016-11-07T10:20:27.252+02:00,100percentfedup.com,US,25689,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",0.995,http://100percentfedup.com/wp-content/uploads/2016/11/TRUCK-TORCHED-HILLARY.jpg,0,0,0,0,0,bias
+[...36766 additional characters not shown...]</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to9__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-expected-02.txt'>test-a10/fake-news-ms-expected-02.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-actual-02.txt'>test-a10/fake-news-ms-actual-02.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to9__top">t</a></td><td class="diff_header" id="from9_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;35</td><td class="diff_next"><a href="#difflib_chg_to9__top">t</a></td><td class="diff_header" id="to9_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;35</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;35</td><td class="diff_next"></td><td class="diff_header" id="to9_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;35</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_3">3</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;22</td><td class="diff_next"></td><td class="diff_header" id="to9_3">3</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;22</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_4">4</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;21</td><td class="diff_next"></td><td class="diff_header" id="to9_4">4</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;21</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_5">5</td><td nowrap="nowrap">video&nbsp;:&nbsp;20</td><td class="diff_next"></td><td class="diff_header" id="to9_5">5</td><td nowrap="nowrap">video&nbsp;:&nbsp;20</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_6">6</td><td nowrap="nowrap">for&nbsp;:&nbsp;15</td><td class="diff_next"></td><td class="diff_header" id="to9_6">6</td><td nowrap="nowrap">for&nbsp;:&nbsp;15</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_7">7</td><td nowrap="nowrap">and&nbsp;:&nbsp;13</td><td class="diff_next"></td><td class="diff_header" id="to9_7">7</td><td nowrap="nowrap">and&nbsp;:&nbsp;13</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_8">8</td><td nowrap="nowrap">100percentfedup&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to9_8">8</td><td nowrap="nowrap">100percentfedup&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_9">9</td><td nowrap="nowrap">com&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to9_9">9</td><td nowrap="nowrap">com&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_10">10</td><td nowrap="nowrap">with&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to9_10">10</td><td nowrap="nowrap">with&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_11">11</td><td nowrap="nowrap">are&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to9_11">11</td><td nowrap="nowrap">are&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_12">12</td><td nowrap="nowrap">fbi&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to9_12">12</td><td nowrap="nowrap">fbi&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_13">13</td><td nowrap="nowrap">not&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to9_13">13</td><td nowrap="nowrap">not&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from9_14">14</td><td nowrap="nowrap">over&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to9_14">14</td><td nowrap="nowrap">over&nbsp;:&nbsp;7</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>fake-news-ms.py</code> test 3</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/fake-news-ms-input-03.txt'>test-a10/fake-news-ms-input-03.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a10/in500.csv>test-a10/in500.csv</a></pre>
+<tr><td><pre style='margin:0;'>7</pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a10/in500.csv>test-a10/in500.csv</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+#uuid,ord_in_thread,author,published,title,language,crawled,site_url,country,domain_rank,thread_title,spam_score,main_img_url,replies_count,participants_count,likes,comments,shares,type
+6a175f46bcd24d39b3e962ad0f29936721db70db,0,Barracuda Brigade,2016-10-26T21:41:00.000+03:00,Muslims BUSTED: They Stole Millions In Gov t Benefits,english,2016-10-27T01:49:27.168+03:00,100percentfedup.com,US,25689,Muslims BUSTED: They Stole Millions In Gov t Benefits,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10262016-83501-AM.bmp.jpg,0,1,0,0,0,bias
+2bdc29d12605ef9cf3f09f9875040a7113be5d5b,0,reasoning with facts,2016-10-29T08:47:11.259+03:00,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,english,2016-10-29T08:47:11.259+03:00,100percentfedup.com,US,25689,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10282016-102616-PM.bmp.jpg,0,1,0,0,0,bias
+c70e149fdd53de5e61c29281100b9de0ed268bc3,0,Barracuda Brigade,2016-10-31T01:41:49.479+02:00,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,english,2016-10-31T01:41:49.479+02:00,100percentfedup.com,US,25689,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10302016-60437-PM.bmp.jpg,0,1,0,0,0,bias
+7cf7c15731ac2a116dd7f629bd57ea468ed70284,0,Fed Up,2016-11-01T05:22:00.000+02:00,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",english,2016-11-01T15:46:26.304+02:00,100percentfedup.com,US,25689,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",0.068,http://100percentfedup.com/wp-content/uploads/2016/10/kayla.jpg,0,0,0,0,0,bias
+0206b54719c7e241ffe0ad4315b808290dbe6c0f,0,Fed Up,2016-11-01T21:56:00.000+02:00,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,english,2016-11-01T23:59:42.266+02:00,100percentfedup.com,US,25689,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,0.865,http://100percentfedup.com/wp-content/uploads/2016/11/obamacare-sites-404-970x0.jpg,0,0,0,0,0,bias
+8f30f5ea14c9d5914a9fe4f55ab2581772af4c31,0,Barracuda Brigade,2016-11-02T16:31:28.550+02:00,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),english,2016-11-02T16:31:28.550+02:00,100percentfedup.com,US,25689,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),0,http://bb4sp.com/wp-content/uploads/2016/11/Fullscreen-capture-1122016-74311-AM.bmp.jpg,0,1,0,0,0,bias
+d3cc0fe38f41a59f7c48f8c3528ca5f74193148f,0,Fed Up,2016-11-04T19:40:00.000+02:00,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",english,2016-11-05T02:13:46.065+02:00,100percentfedup.com,US,25689,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",0.701,http://100percentfedup.com/wp-content/uploads/2016/11/hillary-looking-down.jpg,0,0,0,0,0,bias
+b4bbf8b5c19e8864f5257832a58b81ef4ed2d4e4,0,Fed Up,2016-11-05T01:19:00.000+02:00,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,english,2016-11-05T05:59:07.458+02:00,100percentfedup.com,US,25689,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,0.188,http://100percentfedup.com/wp-content/uploads/2016/11/snipes-dem.jpg,0,0,0,0,0,bias
+a19aabaa5a61eb8bc22fadaaa003e5fbba5c4bf6,0,Fed Up,2016-11-06T23:54:00.000+02:00,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,english,2016-11-07T10:20:06.409+02:00,100percentfedup.com,US,25689,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,0.144,http://100percentfedup.com/wp-content/uploads/2016/05/hillary-comey.jpg,0,0,0,0,0,bias
+f54d8e13010d0a79893995ee65360ad4b38b5a35,0,Fed Up,2016-11-07T02:43:00.000+02:00,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",english,2016-11-07T10:20:27.252+02:00,100percentfedup.com,US,25689,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",0.995,http://100percentfedup.com/wp-content/uploads/2016/11/TRUCK-TORCHED-HILLARY.jpg,0,0,0,0,0,bias
+[...174696 additional characters not shown...]</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to10__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-expected-03.txt'>test-a10/fake-news-ms-expected-03.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-actual-03.txt'>test-a10/fake-news-ms-actual-03.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to10__top">t</a></td><td class="diff_header" id="from10_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;151</td><td class="diff_next"><a href="#difflib_chg_to10__top">t</a></td><td class="diff_header" id="to10_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;151</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from10_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;91</td><td class="diff_next"></td><td class="diff_header" id="to10_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;91</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from10_3">3</td><td nowrap="nowrap">for&nbsp;:&nbsp;57</td><td class="diff_next"></td><td class="diff_header" id="to10_3">3</td><td nowrap="nowrap">for&nbsp;:&nbsp;57</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from10_4">4</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;55</td><td class="diff_next"></td><td class="diff_header" id="to10_4">4</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;55</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from10_5">5</td><td nowrap="nowrap">and&nbsp;:&nbsp;52</td><td class="diff_next"></td><td class="diff_header" id="to10_5">5</td><td nowrap="nowrap">and&nbsp;:&nbsp;52</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from10_6">6</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;42</td><td class="diff_next"></td><td class="diff_header" id="to10_6">6</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;42</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from10_7">7</td><td nowrap="nowrap">election&nbsp;:&nbsp;35</td><td class="diff_next"></td><td class="diff_header" id="to10_7">7</td><td nowrap="nowrap">election&nbsp;:&nbsp;35</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from10_8">8</td><td nowrap="nowrap">video&nbsp;:&nbsp;33</td><td class="diff_next"></td><td class="diff_header" id="to10_8">8</td><td nowrap="nowrap">video&nbsp;:&nbsp;33</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>fake-news-ms.py</code> test 4</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/fake-news-ms-input-04.txt'>test-a10/fake-news-ms-input-04.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'>test-a10/notafile.csv</pre>
+<tr><td><pre style='margin:0;'>7</pre>
+
+            </tbody>
+            </table>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to11__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-expected-04.txt'>test-a10/fake-news-ms-expected-04.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-actual-04.txt'>test-a10/fake-news-ms-actual-04.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to11__top">t</a></td><td class="diff_header" id="from11_1">1</td><td nowrap="nowrap">File:&nbsp;ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file&nbsp;test-a10/notafile.csv</td><td class="diff_next"><a href="#difflib_chg_to11__top">t</a></td><td class="diff_header" id="to11_1">1</td><td nowrap="nowrap">File:&nbsp;ERROR:&nbsp;Could&nbsp;not&nbsp;open&nbsp;file&nbsp;test-a10/notafile.csv</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>fake-news-ms.py</code> test 5</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/fake-news-ms-input-05.txt'>test-a10/fake-news-ms-input-05.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a10/in500.csv>test-a10/in500.csv</a></pre>
+<tr><td><pre style='margin:0;'>100</pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a10/in500.csv>test-a10/in500.csv</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+#uuid,ord_in_thread,author,published,title,language,crawled,site_url,country,domain_rank,thread_title,spam_score,main_img_url,replies_count,participants_count,likes,comments,shares,type
+6a175f46bcd24d39b3e962ad0f29936721db70db,0,Barracuda Brigade,2016-10-26T21:41:00.000+03:00,Muslims BUSTED: They Stole Millions In Gov t Benefits,english,2016-10-27T01:49:27.168+03:00,100percentfedup.com,US,25689,Muslims BUSTED: They Stole Millions In Gov t Benefits,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10262016-83501-AM.bmp.jpg,0,1,0,0,0,bias
+2bdc29d12605ef9cf3f09f9875040a7113be5d5b,0,reasoning with facts,2016-10-29T08:47:11.259+03:00,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,english,2016-10-29T08:47:11.259+03:00,100percentfedup.com,US,25689,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10282016-102616-PM.bmp.jpg,0,1,0,0,0,bias
+c70e149fdd53de5e61c29281100b9de0ed268bc3,0,Barracuda Brigade,2016-10-31T01:41:49.479+02:00,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,english,2016-10-31T01:41:49.479+02:00,100percentfedup.com,US,25689,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10302016-60437-PM.bmp.jpg,0,1,0,0,0,bias
+7cf7c15731ac2a116dd7f629bd57ea468ed70284,0,Fed Up,2016-11-01T05:22:00.000+02:00,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",english,2016-11-01T15:46:26.304+02:00,100percentfedup.com,US,25689,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",0.068,http://100percentfedup.com/wp-content/uploads/2016/10/kayla.jpg,0,0,0,0,0,bias
+0206b54719c7e241ffe0ad4315b808290dbe6c0f,0,Fed Up,2016-11-01T21:56:00.000+02:00,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,english,2016-11-01T23:59:42.266+02:00,100percentfedup.com,US,25689,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,0.865,http://100percentfedup.com/wp-content/uploads/2016/11/obamacare-sites-404-970x0.jpg,0,0,0,0,0,bias
+8f30f5ea14c9d5914a9fe4f55ab2581772af4c31,0,Barracuda Brigade,2016-11-02T16:31:28.550+02:00,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),english,2016-11-02T16:31:28.550+02:00,100percentfedup.com,US,25689,Hillary Goes Absolutely Berserk On Protester At Rally! (Video),0,http://bb4sp.com/wp-content/uploads/2016/11/Fullscreen-capture-1122016-74311-AM.bmp.jpg,0,1,0,0,0,bias
+d3cc0fe38f41a59f7c48f8c3528ca5f74193148f,0,Fed Up,2016-11-04T19:40:00.000+02:00,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",english,2016-11-05T02:13:46.065+02:00,100percentfedup.com,US,25689,"BREAKING! NYPD Ready To Make Arrests In Weiner Case Hillary Visited Pedophile Island At Least 6 Times Money Laundering, Underage Sex, Pay-for-Play,Proof of Inappropriate Handling Classified Information   100percentfedUp.com",0.701,http://100percentfedup.com/wp-content/uploads/2016/11/hillary-looking-down.jpg,0,0,0,0,0,bias
+b4bbf8b5c19e8864f5257832a58b81ef4ed2d4e4,0,Fed Up,2016-11-05T01:19:00.000+02:00,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,english,2016-11-05T05:59:07.458+02:00,100percentfedup.com,US,25689,WOW! WHISTLEBLOWER TELLS CHILLING STORY Of Massive Voter Fraud: Trump Campaign Readies Lawsuit Against FL Sec Of Elections In Critical District [VIDEO]   100percentfedUp.com,0.188,http://100percentfedup.com/wp-content/uploads/2016/11/snipes-dem.jpg,0,0,0,0,0,bias
+a19aabaa5a61eb8bc22fadaaa003e5fbba5c4bf6,0,Fed Up,2016-11-06T23:54:00.000+02:00,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,english,2016-11-07T10:20:06.409+02:00,100percentfedup.com,US,25689,BREAKING: CLINTON CLEARED...Was This A Coordinated Last Minute Trick To Energize Hillary's Base?   100percentfedUp.com,0.144,http://100percentfedup.com/wp-content/uploads/2016/05/hillary-comey.jpg,0,0,0,0,0,bias
+f54d8e13010d0a79893995ee65360ad4b38b5a35,0,Fed Up,2016-11-07T02:43:00.000+02:00,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",english,2016-11-07T10:20:27.252+02:00,100percentfedup.com,US,25689,"EVIL HILLARY SUPPORTERS Yell ""F*ck Trump"" Burn Truck Of Daddy Fishing With 2 Yr Son Over Of Trump Bumper-Stickers [VIDEO]   100percentfedUp.com",0.995,http://100percentfedup.com/wp-content/uploads/2016/11/TRUCK-TORCHED-HILLARY.jpg,0,0,0,0,0,bias
+[...174696 additional characters not shown...]</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to12__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-expected-05.txt'>test-a10/fake-news-ms-expected-05.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-actual-05.txt'>test-a10/fake-news-ms-actual-05.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to12__top">t</a></td><td class="diff_header" id="from12_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;151</td><td class="diff_next"><a href="#difflib_chg_to12__top">t</a></td><td class="diff_header" id="to12_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;the&nbsp;:&nbsp;151</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;91</td><td class="diff_next"></td><td class="diff_header" id="to12_2">2</td><td nowrap="nowrap">trump&nbsp;:&nbsp;91</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_3">3</td><td nowrap="nowrap">for&nbsp;:&nbsp;57</td><td class="diff_next"></td><td class="diff_header" id="to12_3">3</td><td nowrap="nowrap">for&nbsp;:&nbsp;57</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_4">4</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;55</td><td class="diff_next"></td><td class="diff_header" id="to12_4">4</td><td nowrap="nowrap">hillary&nbsp;:&nbsp;55</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_5">5</td><td nowrap="nowrap">and&nbsp;:&nbsp;52</td><td class="diff_next"></td><td class="diff_header" id="to12_5">5</td><td nowrap="nowrap">and&nbsp;:&nbsp;52</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_6">6</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;42</td><td class="diff_next"></td><td class="diff_header" id="to12_6">6</td><td nowrap="nowrap">clinton&nbsp;:&nbsp;42</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_7">7</td><td nowrap="nowrap">election&nbsp;:&nbsp;35</td><td class="diff_next"></td><td class="diff_header" id="to12_7">7</td><td nowrap="nowrap">election&nbsp;:&nbsp;35</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_8">8</td><td nowrap="nowrap">video&nbsp;:&nbsp;33</td><td class="diff_next"></td><td class="diff_header" id="to12_8">8</td><td nowrap="nowrap">video&nbsp;:&nbsp;33</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_9">9</td><td nowrap="nowrap">with&nbsp;:&nbsp;30</td><td class="diff_next"></td><td class="diff_header" id="to12_9">9</td><td nowrap="nowrap">with&nbsp;:&nbsp;30</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_10">10</td><td nowrap="nowrap">you&nbsp;:&nbsp;23</td><td class="diff_next"></td><td class="diff_header" id="to12_10">10</td><td nowrap="nowrap">you&nbsp;:&nbsp;23</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_11">11</td><td nowrap="nowrap">from&nbsp;:&nbsp;21</td><td class="diff_next"></td><td class="diff_header" id="to12_11">11</td><td nowrap="nowrap">from&nbsp;:&nbsp;21</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_12">12</td><td nowrap="nowrap">new&nbsp;:&nbsp;21</td><td class="diff_next"></td><td class="diff_header" id="to12_12">12</td><td nowrap="nowrap">new&nbsp;:&nbsp;21</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_13">13</td><td nowrap="nowrap">war&nbsp;:&nbsp;21</td><td class="diff_next"></td><td class="diff_header" id="to12_13">13</td><td nowrap="nowrap">war&nbsp;:&nbsp;21</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_14">14</td><td nowrap="nowrap">white&nbsp;:&nbsp;21</td><td class="diff_next"></td><td class="diff_header" id="to12_14">14</td><td nowrap="nowrap">white&nbsp;:&nbsp;21</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_15">15</td><td nowrap="nowrap">are&nbsp;:&nbsp;20</td><td class="diff_next"></td><td class="diff_header" id="to12_15">15</td><td nowrap="nowrap">are&nbsp;:&nbsp;20</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_16">16</td><td nowrap="nowrap">what&nbsp;:&nbsp;20</td><td class="diff_next"></td><td class="diff_header" id="to12_16">16</td><td nowrap="nowrap">what&nbsp;:&nbsp;20</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_17">17</td><td nowrap="nowrap">not&nbsp;:&nbsp;19</td><td class="diff_next"></td><td class="diff_header" id="to12_17">17</td><td nowrap="nowrap">not&nbsp;:&nbsp;19</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_18">18</td><td nowrap="nowrap">about&nbsp;:&nbsp;18</td><td class="diff_next"></td><td class="diff_header" id="to12_18">18</td><td nowrap="nowrap">about&nbsp;:&nbsp;18</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_19">19</td><td nowrap="nowrap">russia&nbsp;:&nbsp;18</td><td class="diff_next"></td><td class="diff_header" id="to12_19">19</td><td nowrap="nowrap">russia&nbsp;:&nbsp;18</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_20">20</td><td nowrap="nowrap">donald&nbsp;:&nbsp;17</td><td class="diff_next"></td><td class="diff_header" id="to12_20">20</td><td nowrap="nowrap">donald&nbsp;:&nbsp;17</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_21">21</td><td nowrap="nowrap">fbi&nbsp;:&nbsp;16</td><td class="diff_next"></td><td class="diff_header" id="to12_21">21</td><td nowrap="nowrap">fbi&nbsp;:&nbsp;16</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_22">22</td><td nowrap="nowrap">why&nbsp;:&nbsp;16</td><td class="diff_next"></td><td class="diff_header" id="to12_22">22</td><td nowrap="nowrap">why&nbsp;:&nbsp;16</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_23">23</td><td nowrap="nowrap">over&nbsp;:&nbsp;15</td><td class="diff_next"></td><td class="diff_header" id="to12_23">23</td><td nowrap="nowrap">over&nbsp;:&nbsp;15</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_24">24</td><td nowrap="nowrap">american&nbsp;:&nbsp;14</td><td class="diff_next"></td><td class="diff_header" id="to12_24">24</td><td nowrap="nowrap">american&nbsp;:&nbsp;14</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_25">25</td><td nowrap="nowrap">obama&nbsp;:&nbsp;14</td><td class="diff_next"></td><td class="diff_header" id="to12_25">25</td><td nowrap="nowrap">obama&nbsp;:&nbsp;14</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_26">26</td><td nowrap="nowrap">this&nbsp;:&nbsp;14</td><td class="diff_next"></td><td class="diff_header" id="to12_26">26</td><td nowrap="nowrap">this&nbsp;:&nbsp;14</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_27">27</td><td nowrap="nowrap">com&nbsp;:&nbsp;13</td><td class="diff_next"></td><td class="diff_header" id="to12_27">27</td><td nowrap="nowrap">com&nbsp;:&nbsp;13</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_28">28</td><td nowrap="nowrap">one&nbsp;:&nbsp;13</td><td class="diff_next"></td><td class="diff_header" id="to12_28">28</td><td nowrap="nowrap">one&nbsp;:&nbsp;13</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_29">29</td><td nowrap="nowrap">100percentfedup&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to12_29">29</td><td nowrap="nowrap">100percentfedup&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_30">30</td><td nowrap="nowrap">america&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to12_30">30</td><td nowrap="nowrap">america&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_31">31</td><td nowrap="nowrap">can&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to12_31">31</td><td nowrap="nowrap">can&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_32">32</td><td nowrap="nowrap">comment&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to12_32">32</td><td nowrap="nowrap">comment&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_33">33</td><td nowrap="nowrap">day&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to12_33">33</td><td nowrap="nowrap">day&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_34">34</td><td nowrap="nowrap">police&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to12_34">34</td><td nowrap="nowrap">police&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_35">35</td><td nowrap="nowrap">wikileaks&nbsp;:&nbsp;12</td><td class="diff_next"></td><td class="diff_header" id="to12_35">35</td><td nowrap="nowrap">wikileaks&nbsp;:&nbsp;12</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_36">36</td><td nowrap="nowrap">here&nbsp;:&nbsp;11</td><td class="diff_next"></td><td class="diff_header" id="to12_36">36</td><td nowrap="nowrap">here&nbsp;:&nbsp;11</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_37">37</td><td nowrap="nowrap">president&nbsp;:&nbsp;11</td><td class="diff_next"></td><td class="diff_header" id="to12_37">37</td><td nowrap="nowrap">president&nbsp;:&nbsp;11</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_38">38</td><td nowrap="nowrap">vote&nbsp;:&nbsp;11</td><td class="diff_next"></td><td class="diff_header" id="to12_38">38</td><td nowrap="nowrap">vote&nbsp;:&nbsp;11</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_39">39</td><td nowrap="nowrap">who&nbsp;:&nbsp;11</td><td class="diff_next"></td><td class="diff_header" id="to12_39">39</td><td nowrap="nowrap">who&nbsp;:&nbsp;11</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_40">40</td><td nowrap="nowrap">will&nbsp;:&nbsp;11</td><td class="diff_next"></td><td class="diff_header" id="to12_40">40</td><td nowrap="nowrap">will&nbsp;:&nbsp;11</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_41">41</td><td nowrap="nowrap">after&nbsp;:&nbsp;10</td><td class="diff_next"></td><td class="diff_header" id="to12_41">41</td><td nowrap="nowrap">after&nbsp;:&nbsp;10</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_42">42</td><td nowrap="nowrap">against&nbsp;:&nbsp;10</td><td class="diff_next"></td><td class="diff_header" id="to12_42">42</td><td nowrap="nowrap">against&nbsp;:&nbsp;10</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_43">43</td><td nowrap="nowrap">black&nbsp;:&nbsp;10</td><td class="diff_next"></td><td class="diff_header" id="to12_43">43</td><td nowrap="nowrap">black&nbsp;:&nbsp;10</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_44">44</td><td nowrap="nowrap">case&nbsp;:&nbsp;10</td><td class="diff_next"></td><td class="diff_header" id="to12_44">44</td><td nowrap="nowrap">case&nbsp;:&nbsp;10</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_45">45</td><td nowrap="nowrap">right&nbsp;:&nbsp;10</td><td class="diff_next"></td><td class="diff_header" id="to12_45">45</td><td nowrap="nowrap">right&nbsp;:&nbsp;10</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_46">46</td><td nowrap="nowrap">wants&nbsp;:&nbsp;10</td><td class="diff_next"></td><td class="diff_header" id="to12_46">46</td><td nowrap="nowrap">wants&nbsp;:&nbsp;10</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_47">47</td><td nowrap="nowrap">campaign&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_47">47</td><td nowrap="nowrap">campaign&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_48">48</td><td nowrap="nowrap">foundation&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_48">48</td><td nowrap="nowrap">foundation&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_49">49</td><td nowrap="nowrap">info&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_49">49</td><td nowrap="nowrap">info&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_50">50</td><td nowrap="nowrap">media&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_50">50</td><td nowrap="nowrap">media&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_51">51</td><td nowrap="nowrap">off&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_51">51</td><td nowrap="nowrap">off&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_52">52</td><td nowrap="nowrap">protesters&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_52">52</td><td nowrap="nowrap">protesters&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_53">53</td><td nowrap="nowrap">that&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_53">53</td><td nowrap="nowrap">that&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_54">54</td><td nowrap="nowrap">was&nbsp;:&nbsp;9</td><td class="diff_next"></td><td class="diff_header" id="to12_54">54</td><td nowrap="nowrap">was&nbsp;:&nbsp;9</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_55">55</td><td nowrap="nowrap">2016&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_55">55</td><td nowrap="nowrap">2016&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_56">56</td><td nowrap="nowrap">addicting&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_56">56</td><td nowrap="nowrap">addicting&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_57">57</td><td nowrap="nowrap">anti&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_57">57</td><td nowrap="nowrap">anti&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_58">58</td><td nowrap="nowrap">breaking&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_58">58</td><td nowrap="nowrap">breaking&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_59">59</td><td nowrap="nowrap">caught&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_59">59</td><td nowrap="nowrap">caught&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_60">60</td><td nowrap="nowrap">crave&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_60">60</td><td nowrap="nowrap">crave&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_61">61</td><td nowrap="nowrap">investigation&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_61">61</td><td nowrap="nowrap">investigation&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_62">62</td><td nowrap="nowrap">knowledge&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_62">62</td><td nowrap="nowrap">knowledge&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_63">63</td><td nowrap="nowrap">lookout&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_63">63</td><td nowrap="nowrap">lookout&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_64">64</td><td nowrap="nowrap">now&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_64">64</td><td nowrap="nowrap">now&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_65">65</td><td nowrap="nowrap">out&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_65">65</td><td nowrap="nowrap">out&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_66">66</td><td nowrap="nowrap">students&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_66">66</td><td nowrap="nowrap">students&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_67">67</td><td nowrap="nowrap">supporters&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_67">67</td><td nowrap="nowrap">supporters&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_68">68</td><td nowrap="nowrap">than&nbsp;:&nbsp;8</td><td class="diff_next"></td><td class="diff_header" id="to12_68">68</td><td nowrap="nowrap">than&nbsp;:&nbsp;8</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_69">69</td><td nowrap="nowrap">assange&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_69">69</td><td nowrap="nowrap">assange&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_70">70</td><td nowrap="nowrap">before&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_70">70</td><td nowrap="nowrap">before&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_71">71</td><td nowrap="nowrap">house&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_71">71</td><td nowrap="nowrap">house&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_72">72</td><td nowrap="nowrap">how&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_72">72</td><td nowrap="nowrap">how&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_73">73</td><td nowrap="nowrap">into&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_73">73</td><td nowrap="nowrap">into&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_74">74</td><td nowrap="nowrap">more&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_74">74</td><td nowrap="nowrap">more&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_75">75</td><td nowrap="nowrap">public&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_75">75</td><td nowrap="nowrap">public&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_76">76</td><td nowrap="nowrap">race&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_76">76</td><td nowrap="nowrap">race&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_77">77</td><td nowrap="nowrap">rock&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_77">77</td><td nowrap="nowrap">rock&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_78">78</td><td nowrap="nowrap">standing&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_78">78</td><td nowrap="nowrap">standing&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_79">79</td><td nowrap="nowrap">stop&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_79">79</td><td nowrap="nowrap">stop&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_80">80</td><td nowrap="nowrap">syria&nbsp;:&nbsp;7</td><td class="diff_next"></td><td class="diff_header" id="to12_80">80</td><td nowrap="nowrap">syria&nbsp;:&nbsp;7</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_81">81</td><td nowrap="nowrap">alt&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_81">81</td><td nowrap="nowrap">alt&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_82">82</td><td nowrap="nowrap">back&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_82">82</td><td nowrap="nowrap">back&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_83">83</td><td nowrap="nowrap">blacks&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_83">83</td><td nowrap="nowrap">blacks&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_84">84</td><td nowrap="nowrap">border&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_84">84</td><td nowrap="nowrap">border&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_85">85</td><td nowrap="nowrap">civil&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_85">85</td><td nowrap="nowrap">civil&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_86">86</td><td nowrap="nowrap">damage&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_86">86</td><td nowrap="nowrap">damage&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_87">87</td><td nowrap="nowrap">email&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_87">87</td><td nowrap="nowrap">email&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_88">88</td><td nowrap="nowrap">first&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_88">88</td><td nowrap="nowrap">first&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_89">89</td><td nowrap="nowrap">government&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_89">89</td><td nowrap="nowrap">government&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_90">90</td><td nowrap="nowrap">has&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_90">90</td><td nowrap="nowrap">has&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_91">91</td><td nowrap="nowrap">human&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_91">91</td><td nowrap="nowrap">human&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_92">92</td><td nowrap="nowrap">just&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_92">92</td><td nowrap="nowrap">just&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_93">93</td><td nowrap="nowrap">like&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_93">93</td><td nowrap="nowrap">like&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_94">94</td><td nowrap="nowrap">migrants&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_94">94</td><td nowrap="nowrap">migrants&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_95">95</td><td nowrap="nowrap">million&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_95">95</td><td nowrap="nowrap">million&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_96">96</td><td nowrap="nowrap">nato&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_96">96</td><td nowrap="nowrap">nato&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_97">97</td><td nowrap="nowrap">news&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_97">97</td><td nowrap="nowrap">news&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_98">98</td><td nowrap="nowrap">part&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_98">98</td><td nowrap="nowrap">part&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_99">99</td><td nowrap="nowrap">plan&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_99">99</td><td nowrap="nowrap">plan&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_100">100</td><td nowrap="nowrap">podesta&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_100">100</td><td nowrap="nowrap">podesta&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_101">101</td><td nowrap="nowrap">proof&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_101">101</td><td nowrap="nowrap">proof&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_102">102</td><td nowrap="nowrap">putin&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_102">102</td><td nowrap="nowrap">putin&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_103">103</td><td nowrap="nowrap">real&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_103">103</td><td nowrap="nowrap">real&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_104">104</td><td nowrap="nowrap">red&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_104">104</td><td nowrap="nowrap">red&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_105">105</td><td nowrap="nowrap">soros&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_105">105</td><td nowrap="nowrap">soros&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_106">106</td><td nowrap="nowrap">star&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_106">106</td><td nowrap="nowrap">star&nbsp;:&nbsp;6</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from12_107">107</td><td nowrap="nowrap">voting&nbsp;:&nbsp;6</td><td class="diff_next"></td><td class="diff_header" id="to12_107">107</td><td nowrap="nowrap">voting&nbsp;:&nbsp;6</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>fake-news-ms.py</code> test 6</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a10/fake-news-ms-input-06.txt'>test-a10/fake-news-ms-input-06.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a10/in05.csv>test-a10/in05.csv</a></pre>
+<tr><td><pre style='margin:0;'>abcd</pre>
+
+            </tbody>
+            </table>
+            
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a10/in05.csv>test-a10/in05.csv</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+#uuid,ord_in_thread,author,published,title,language,crawled,site_url,country,domain_rank,thread_title,spam_score,main_img_url,replies_count,participants_count,likes,comments,shares,type
+6a175f46bcd24d39b3e962ad0f29936721db70db,0,Barracuda Brigade,2016-10-26T21:41:00.000+03:00,Muslims BUSTED: They Stole Millions In Gov t Benefits,english,2016-10-27T01:49:27.168+03:00,100percentfedup.com,US,25689,Muslims BUSTED: They Stole Millions In Gov t Benefits,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10262016-83501-AM.bmp.jpg,0,1,0,0,0,bias
+2bdc29d12605ef9cf3f09f9875040a7113be5d5b,0,reasoning with facts,2016-10-29T08:47:11.259+03:00,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,english,2016-10-29T08:47:11.259+03:00,100percentfedup.com,US,25689,Re: Why Did Attorney General Loretta Lynch Plead The Fifth?,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10282016-102616-PM.bmp.jpg,0,1,0,0,0,bias
+c70e149fdd53de5e61c29281100b9de0ed268bc3,0,Barracuda Brigade,2016-10-31T01:41:49.479+02:00,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,english,2016-10-31T01:41:49.479+02:00,100percentfedup.com,US,25689,BREAKING: Weiner Cooperating With FBI On Hillary Email Investigation,0,http://bb4sp.com/wp-content/uploads/2016/10/Fullscreen-capture-10302016-60437-PM.bmp.jpg,0,1,0,0,0,bias
+7cf7c15731ac2a116dd7f629bd57ea468ed70284,0,Fed Up,2016-11-01T05:22:00.000+02:00,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",english,2016-11-01T15:46:26.304+02:00,100percentfedup.com,US,25689,"PIN DROP SPEECH BY FATHER OF DAUGHTER Kidnapped And Killed By ISIS: ""I have voted for Donald J. Trump!""   100percentfedUp.com",0.068,http://100percentfedup.com/wp-content/uploads/2016/10/kayla.jpg,0,0,0,0,0,bias
+0206b54719c7e241ffe0ad4315b808290dbe6c0f,0,Fed Up,2016-11-01T21:56:00.000+02:00,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,english,2016-11-01T23:59:42.266+02:00,100percentfedup.com,US,25689,FANTASTIC! TRUMP'S 7 POINT PLAN To Reform Healthcare Begins With A Bombshell!   100percentfedUp.com,0.865,http://100percentfedup.com/wp-content/uploads/2016/11/obamacare-sites-404-970x0.jpg,0,0,0,0,0,bias
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to13__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-expected-06.txt'>test-a10/fake-news-ms-expected-06.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a10/fake-news-ms-actual-06.txt'>test-a10/fake-news-ms-actual-06.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to13__top">t</a></td><td class="diff_header" id="from13_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;ERROR:&nbsp;Could&nbsp;not&nbsp;read&nbsp;N</td><td class="diff_next"><a href="#difflib_chg_to13__top">t</a></td><td class="diff_header" id="to13_1">1</td><td nowrap="nowrap">File:&nbsp;N:&nbsp;ERROR:&nbsp;Could&nbsp;not&nbsp;read&nbsp;N</td></tr>
+        </tbody>
+    </table></div><br><br><table class="diff" summary="Legends"> <tr> <th colspan="2"> Legends </th> </tr> <tr> <td> <table border="" summary="Colors"> <tr><th> Colors </th> </tr> <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr> <tr><td class="diff_chg">Changed</td> </tr> <tr><td class="diff_sub">Deleted</td> </tr> </table></td> <td> <table border="" summary="Links"> <tr><th colspan="2"> Links </th> </tr> <tr><td>(f)irst change</td> </tr> <tr><td>(n)ext change</td> </tr> <tr><td>(t)op</td> </tr> </table></td> </tr> </table><br><br><div class=disclaimer><b>NOTE:</b> This tester gives you an automated way to confirm that your programs are producing the expected output for the examples shown in the assignment specifications, including error cases. <u>Passing the test cases does not guarantee any particular grade: additional and/or different test cases will be included when grading.</u></div>

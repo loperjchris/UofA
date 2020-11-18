@@ -1,0 +1,2 @@
+test-a12/Ebola.fasta
+6

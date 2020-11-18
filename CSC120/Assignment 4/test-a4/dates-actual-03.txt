@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "dates.py", line 194, in <module>
+    main()
+  File "dates.py", line 103, in main
+    set_dates()
+  File "dates.py", line 129, in set_dates
+    "ERROR: Illegal operation."
+AssertionError: ERROR: Illegal operation.

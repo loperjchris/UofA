@@ -1,0 +1,5 @@
+Steel: 528.3333333333334
+Normal: 78.3529411764706
+Psychic: 85.375
+Psychic: 85.375
+Psychic: 85.375

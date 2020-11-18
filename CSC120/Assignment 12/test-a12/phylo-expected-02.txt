@@ -1,0 +1,1 @@
+FASTA file: n-gram size: (((name2, name5), name3), (name1, name4))

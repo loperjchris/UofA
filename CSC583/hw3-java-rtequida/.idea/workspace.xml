@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="02186e81-1095-4823-99ee-a30cffa90e44" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1iystOVZ19dy0pjPVCeZlu7Wmqz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Coding2/UofA/CSC583/hw4_java-rtequida" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="JUnit.TestQ1_1">
+    <configuration name="QueryEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.QueryEngine" />
+      <module name="hw3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQ1_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.arizona.cs" />
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.TestQ1_1" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQ1_2_b" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.arizona.cs" />
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.TestQ1_2_b" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQ1_2_c" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.arizona.cs" />
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.TestQ1_2_c" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQ1_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.arizona.cs" />
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.TestQ1_3" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestQ1_1" />
+        <item itemvalue="Application.QueryEngine" />
+        <item itemvalue="JUnit.TestQ1_3" />
+        <item itemvalue="JUnit.TestQ1_2_c" />
+        <item itemvalue="JUnit.TestQ1_2_b" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02186e81-1095-4823-99ee-a30cffa90e44" name="Default Changelist" comment="" />
+      <created>1602891381867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602891381867</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1813" y="100" width="1534" height="1207" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602975946031">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1813" y="100" width="1534" height="1207" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602975946031" />
+    <state x="2350" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602969504790">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2350" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1602969504790" />
+    <state x="2385" y="410" key="#com.intellij.ide.util.MemberChooser" timestamp="1603140468831">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2385" y="410" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1603140468831" />
+    <state x="2360" y="455" key="FileChooserDialogImpl" timestamp="1605660226746">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2360" y="455" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1605660226746" />
+    <state width="1674" height="303" key="GridCell.Tab.0.bottom" timestamp="1603848380410">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="303" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1603848380410" />
+    <state width="1674" height="303" key="GridCell.Tab.0.center" timestamp="1603848380410">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="303" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1603848380410" />
+    <state width="1674" height="303" key="GridCell.Tab.0.left" timestamp="1603848380409">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="303" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1603848380409" />
+    <state width="1674" height="303" key="GridCell.Tab.0.right" timestamp="1603848380410">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1674" height="303" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1603848380410" />
+    <state x="2110" y="358" key="Maven.ArtifactSearchDialog" timestamp="1602985941554">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2110" y="358" key="Maven.ArtifactSearchDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602985941554" />
+    <state x="2060" y="278" key="SettingsEditor" timestamp="1603170496963">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2060" y="278" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1603170496963" />
+    <state x="2243" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1602974298961">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2243" y="320" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1602974298961" />
+  </component>
+</project>

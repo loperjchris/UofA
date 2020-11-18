@@ -1,0 +1,8 @@
+test-a2/PokeInfo-250.csv
+toTal
+Hp
+SpecialDefense
+SpecialDefense
+SpecialDefense
+
+

@@ -1,0 +1,23 @@
+I used 1 test case that tested every new component of eat. I have a warbler and a bee in the top right corner to demonstrate how 
+birds eat insects and also how a bird will die after 5 moves if they haven't eaten exemplified by the bird dying in 6 moves (moved
+once, ate, then moved 5 times without eating). Next, I have a lion and a zebra in the top left to demonstrate how mammals eat each
+other and how the lion dies out from starvation after not eating for 10 moves on the 12th move (moves twice, eats the zebra, then
+moves 10 more times before dying). There are also two insects on the bottom that die after 10 moves. 
+
+I implemented this by updating the Animal class with totalMoves and movesSinceEaten fields to keep track of their moves.
+isAlive was also added to the Animal class to keep track of whether the animal was still alive or not.
+I also updated Mammal and Bird with MAX_MOVES and MAX_SINCE_EATEN to keep track of their limits before they die.
+Also updated Insect with MAX_MOVES since they only die when they are eaten or die of old age.
+
+In order to get this working right I had to add a new else if statement to PA8Main to catch when EAT is given as a command. I also
+needed to add multiple overloaded eat methods to the Grid class to account for the different ways to input the EAT command. Then, I
+added an eatAnimal method to Grid which determines if the first two animals in a given list will eat each other, kills the eaten one
+and resets the movesSinceEaten field for the surviving animal to zero. movesTotal and movesSinceEaten are updated in the Animal class
+move method and in each animals specific class the check to see if they are alive is done in the takeStep method.
+
+After the move command is evaluated I call on a evaluateBoard method in Grid which looks at all animals on the grid and removes any
+that have isAlive set to false which indicates that they are dead.
+isAlive keeps track of whether the animal is alive. Animals can die from being eaten, taking too many moves, or moving a certain
+number of times without having eaten. My totalMoves and movesSinceEaten fields keep track of how many times the animal has moved
+or moved without eating and compares those values to MAX_MOVES and MAX_SINCE_EATEN respectively to determine if the animal shoudl 
+die or not. 
